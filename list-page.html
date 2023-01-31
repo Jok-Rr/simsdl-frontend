@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/config.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darklight: "#1D2033",
+                        darked: "#171A29",
+                        pinked: "#FF477B",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <header class="flex items-center justify-between col-span-4 p-4 bg-darked">
+        <figure>
+            <a href=""><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
+        </figure>
+        <i class="text-xl text-white fa-solid fa-bars"></i>
+    </header>
+    <main class="text-center text-white">
+        <div class="grid grid-cols-4 px-4 pt-4">
+            <ul class="flex col-span-4 ">
+                <li><i class="mr-2 fa-solid fa-house"></i>Home</li>
+                <li><i class="mx-2 fa-regular fa-angle-right"></i> Title Page</li>
+            </ul>
+        </div>
+        <!-- Module Welcome -->
+        <div id="page-list" class="grid grid-cols-4 p-4">
+            <div class="col-span-4 mb-5 text-left">
+                <h1 class="text-3xl">Title</h1>
+                <p>Une description détaillé</p>
+            </div>
+            <div class="grid grid-cols-4 col-span-4 gap-3">
+                <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                    <figure class="overflow-hidden">
+                        <img src="./assets/images/02.jpeg" alt="" class="" />
+                    </figure>
+                    <div class="p-3">
+                        <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                            decor</span>
+                        <p>Kit les Sims 4 Objets de salle de bain</p>
+                    </div>
+                </div>
+                <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                    <a href="">
+                        <figure class="overflow-hidden">
+                            <img src="./assets/images/02.jpeg" alt="" class="" />
+                        </figure>
+                        <div class="p-3">
+                            <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                decor</span>
+                            <p>Kit les Sims 4 Objets de salle de bain</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                    <a href="">
+                        <figure class="overflow-hidden">
+                            <img src="./assets/images/02.jpeg" alt="" class="" />
+                        </figure>
+                        <div class="p-3">
+                            <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                decor</span>
+                            <p>Kit les Sims 4 Objets de salle de bain</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                    <a href="">
+                        <figure class="overflow-hidden">
+                            <img src="./assets/images/02.jpeg" alt="" class="" />
+                        </figure>
+                        <div class="p-3">
+                            <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                decor</span>
+                            <p>Kit les Sims 4 Objets de salle de bain</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                    <a href="">
+                        <figure class="overflow-hidden">
+                            <img src="./assets/images/02.jpeg" alt="" class="" />
+                        </figure>
+                        <div class="p-3">
+                            <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                decor</span>
+                            <p>Kit les Sims 4 Objets de salle de bain</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="grid grid-cols-4 py-5 text-center text-white justify-items-center bg-darked">
+        <figure class="col-span-4 mb-4">
+            <img src="./assets/images/logo.png" alt="" class="w-32" />
+        </figure>
+        <div class="flex col-span-4 mb-4">
+            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
+                    class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
+                    class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
+                    class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <div class="flex col-span-4">
+            <a href="" class="px-1 border-r-2">Conditions Générales</a>
+            <a href="" class="px-1">Protection des données</a>
+        </div>
+        <span class="col-span-4 text-xs">© Copyright 2023 SimsDL.fr tous droits réservés.</span>
+    </footer>
+</body>
+
+</html>
