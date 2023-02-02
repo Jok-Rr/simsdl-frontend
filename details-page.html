@@ -20,7 +20,8 @@
                         darklight: "#1D2033",
                         darked: "#171A29",
                         pinked: "#FF477B",
-                        black: "#0C0D15"
+                        black: "#0C0D15",
+                        grey: "#8E8E8E"
                     },
                 },
             },
@@ -33,7 +34,12 @@
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
-        <i class="text-xl text-white fa-solid fa-bars"></i>
+        <div class="flex items-center">
+            <i class="text-xl text-white fa-solid fa-bars"></i>
+            <figure class="ml-4 mr-3 overflow-hidden rounded-full w-9 h-fit">
+                <img src="./assets/images/product-6.png" alt="">
+            </figure>
+        </div>
     </header>
     <main class="text-center text-white">
         <div class="grid grid-cols-4 px-4 pt-4">
@@ -200,17 +206,186 @@
             </div>
         </div>
         <div class="grid grid-cols-4 p-4">
-            <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
-                <div class="p-3 bg-darked">
-                    <figure>
-                        <img src="" alt="">
+            <div class="flex justify-between col-span-4 p-4 overflow-hidden rounded-lg bg-darked">
+                <div class="flex items-center">
+                    <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                        <img src="./assets/images/product-6.png" alt="">
                     </figure>
-                    <div>
+                    <div class="text-left">
+                        <p class="uppercase">Dylanbernardoff <i class="fa-solid fa-badge-check text-pinked"></i></p>
+                        <span class="capitalize">administrateur</span>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p>124 <i class="fa-solid fa-eye"></i> </p>
+                    <p>190 <i class="fa-solid fa-comments"></i> </p>
+                </div>
+            </div>
+        </div>
 
+        <div class="grid grid-cols-4 p-4">
+            <div class="col-span-4 mb-5 text-left">
+                <h1>Articles</h1>
+                <p>Une description détaillé</p>
+            </div>
+            <div class="flex justify-end col-span-4 mb-5">
+                <div class="nav-swiper swiper-btn-prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="nav-swiper swiper-btn-next"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="col-span-4 swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="grid grid-cols-4 p-4">
+            <div class="col-span-4 mb-5 text-left">
+                <h1>Espace commentaire</h1>
+                <p>Ci-dessous les commentaire des autre membre</p>
+            </div>
+            <div class="col-span-4 p-4 mb-4 overflow-hidden rounded-lg bg-darked">
+                <div class="flex justify-between mb-4">
+                    <div class="flex items-center ">
+                        <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                            <img src="./assets/images/product-6.png" alt="">
+                        </figure>
+                        <div class="text-left">
+                            <p class="capitalize">DYLANBERNARDOFF <i class="fa-solid fa-badge-check text-pinked"></i>
+                            </p>
+                            <span class="capitalize">administrateur</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p>30/01/2023</p>
+                    </div>
+                </div>
+                <p class="text-left">Trop bien le nouveaux système pour les commentaire. J’ai hâte de voir la suite...
+                </p>
+            </div>
+            <div class="col-span-4 p-4 mb-4 overflow-hidden rounded-lg bg-darked">
+                <div class="flex justify-between mb-4">
+                    <div class="flex items-center ">
+                        <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                            <img src="./assets/images/product-1.png" alt="">
+                        </figure>
+                        <div class="text-left">
+                            <p class="capitalize">SingeVert 💎</p>
+                            <span class="capitalize">Super Membre</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p>30/01/2023</p>
+                    </div>
+                </div>
+
+                <p class="text-left">Merci pour le partage je vais essayer tout de suite! J’espère que ça va marcher
+                    pour moi je vous
+                    tien au courant rapidement dans l’espace commentaire.</p>
+            </div>
+            <div class="col-span-4 p-4 mb-4 overflow-hidden rounded-lg bg-darked">
+                <div class="flex justify-between mb-4">
+                    <div class="flex items-center ">
+                        <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                            <img src="./assets/images/product-15.png" alt="">
+                        </figure>
+                        <div class="text-left">
+                            <p class="capitalize">Pedrolejaune</p>
+                            <span class="capitalize">Membre</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p>30/01/2023</p>
+                    </div>
+                </div>
+
+                <p class="text-left">Super ce nouveaux site!!! </p>
+            </div>
+            <div class="col-span-4 p-4 mb-4 overflow-hidden rounded-lg bg-darked">
+                <div class="flex justify-between mb-4">
+                    <div class="flex items-center ">
+                        <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                            <img src="./assets/images/product-7.png" alt="">
+                        </figure>
+                        <div class="text-left">
+                            <p class="capitalize">HomeBleu <i class="fa-solid fa-shield-check text-pinked"></i></p>
+                            <span class="capitalize">Modérateur </span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p>30/01/2023</p>
+                    </div>
+                </div>
+
+                <p class="text-left">Attention à vos commentaire ! Je vous surveille. </p>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-4 p-4">
+            <div class="col-span-4 mb-5 text-left">
+                <h1>Commentaire</h1>
+                <p>Publier un commentaire sur l’article</p>
+            </div>
+            <div class="col-span-4 mb-4 text-right">
+                <span class="block mb-2 text-left">COMMENTAIRE</span>
+                <textarea name="" id="" cols="30" rows="10"
+                    class="w-full h-40 p-4 border-2 rounded-lg outline-none resize-none bg-darked border-grey focus:border-pinked"
+                    placeholder="Saisissez votre commentaire"></textarea>
+                <button href="/"
+                    class="px-2 mt-2 py-[3px] m-auto inline-block uppercase text-right rounded-md bg-pinked">
+                    publier</button>
+            </div>
+            <div class="col-span-4 p-5 rounded-lg bg-darked">
+                <p>Pourquoi je ne peux pas écrire de commentaires ?</p>
+                <p>Pour pouvoir publier un commentaire merci de vous connecter.
+                </p>
+                <div>
+                    <a href="/" class="px-2 mt-5 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                        Connexion</a>
+                    <a href="/" class="px-2 mt-5 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                        inscription</a>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <footer class="grid grid-cols-4 py-5 text-center text-white justify-items-center bg-darked">
         <figure class="col-span-4 mb-4">
@@ -227,12 +402,29 @@
                     class="fa-brands fa-discord"></i>
             </a>
         </div>
-        <div class="flex col-span-4">
+        <div class="flex col-span-4 mb-3">
             <a href="" class="px-1 border-r-2">Conditions Générales</a>
             <a href="" class="px-1">Protection des données</a>
         </div>
         <span class="col-span-4 text-xs">© Copyright 2023 SimsDL.fr tous droits réservés.</span>
     </footer>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            loop: false,
+            direction: 'horizontal',
+            // If we need pagination
+            slidesPerView: 2,
+            spaceBetween: 5,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-btn-next",
+                prevEl: ".swiper-btn-prev",
+            },
+
+        });
+    </script>
 </body>
 
 </html>
