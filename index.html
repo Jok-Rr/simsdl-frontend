@@ -10,7 +10,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/config.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         tailwind.config = {
@@ -27,12 +26,30 @@
     </script>
 </head>
 
-<body>
-    <header class="flex items-center justify-between col-span-4 p-4 bg-darked">
+<body class="text-white">
+    <header class="relative flex items-center justify-between col-span-4 p-4 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
-        <i class="text-xl text-white fa-solid fa-bars"></i>
+        <div class="flex items-center">
+            <i class="text-xl text-white fa-solid fa-bars" id="burgermenu"></i>
+            <figure class="ml-4 mr-3 overflow-hidden rounded-full w-9 h-fit">
+                <img src="./assets/images/product-6.png" alt="">
+            </figure>
+        </div>
+        <nav id="mobile-menu"
+            class="absolute flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-fit right-4 top-[85px] bg-darked/[0.8] transition-transform backdrop-blur-xl leading-8">
+            <a href="/">Accueil</a>
+            <a href="/">Les Sims 4</a>
+            <a href="/">Télécharger</a>
+            <a href="/">Mises à jour</a>
+            <a href="/">Contenue séparé</a>
+            <a href="/">Contenue Personnalisé</a>
+            <a href="/">Communauté</a>
+            <a href="/">Triches</a>
+            <a href="/">Infos & mises à jour</a>
+
+        </nav>
     </header>
     <main class="text-center text-white">
         <!-- Module Welcome -->
@@ -152,7 +169,7 @@
                     class="fa-brands fa-discord"></i>
             </a>
         </div>
-        <div class="flex col-span-4">
+        <div class="flex col-span-4 mb-3">
             <a href="" class="px-1 border-r-2">Conditions Générales</a>
             <a href="" class="px-1">Protection des données</a>
         </div>
@@ -190,6 +207,8 @@
 
         });
     </script>
+    <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>
