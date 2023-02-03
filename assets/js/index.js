@@ -1,50 +1,50 @@
-//Toggle menu
-const mobileMenu = document.getElementById("mobile-menu");
-const accountMenu = document.getElementById("account-menu");
-const mainSection = document.getElementsByTagName("main")[0];
-const burgerButton = document.getElementById("burgermenu");
+const menuButton = document.getElementById("burgermenu");
+const accountButton = document.getElementById("user-icon");
 
-function openMenuToggle() {
-	document.addEventListener("click", (event) => {
-		console.log(event.target.id);
-		if (event.target.id == "burgermenu") {
-			if (document.body.classList.contains("overflow-hidden")) {
-				burgerButton.classList.add("fa-bars");
-				burgerButton.classList.remove("fa-xmark-large");
-				mobileMenu.classList.remove("scale-y-100");
-				accountMenu.classList.remove("scale-y-100");
-				document.body.classList.remove("overflow-hidden");
-			} else {
-				burgerButton.classList.remove("fa-bars");
-				burgerButton.classList.add("fa-xmark-large");
-				mobileMenu.classList.add("scale-y-100");
-				accountMenu.classList.remove("scale-y-100");
-				document.body.classList.add("overflow-hidden");
-			}
-		} else if (event.target.id == "user-icon") {
-			if (document.body.classList.contains("overflow-hidden")) {
-				accountMenu.classList.remove("scale-y-100");
-				mobileMenu.classList.remove("scale-y-100");
-				document.body.classList.remove("overflow-hidden");
-			} else {
-				accountMenu.classList.add("scale-y-100");
-				mobileMenu.classList.remove("scale-y-100");
-				document.body.classList.add("overflow-hidden");
-			}
-		}
+const menuBox = document.getElementById("mobile-menu");
+const accountBox = document.getElementById("account-menu");
 
-		if (
-			event.target.id !== "burgermenu" &&
-			event.target.id !== "user-icon" &&
-			event.target.parentNode.id !== "account-menu" &&
-			event.target.parentNode.id !== "mobile-menu"
-		) {
-			document.body.classList.remove("overflow-hidden");
-			document.body.classList.remove("blur-sm");
-			mobileMenu.classList.remove("scale-y-100");
-			accountMenu.classList.remove("scale-y-100");
-		}
-	});
-}
+const toggleMenu = function () {
+	if (accountBox.classList.contains("scale-y-100")) {
+		menuButton.classList.add("opened");
 
-openMenuToggle();
+		accountBox.classList.remove("scale-y-100");
+		menuBox.classList.toggle("scale-y-100");
+	} else {
+		menuButton.classList.toggle("opened");
+		menuBox.classList.toggle("scale-y-100");
+		document.documentElement.classList.toggle("overflow-hidden");
+	}
+};
+
+const toggleAccount = function () {
+	if (menuBox.classList.contains("scale-y-100")) {
+		menuButton.classList.remove("opened");
+
+		menuBox.classList.remove("scale-y-100");
+		accountBox.classList.toggle("scale-y-100");
+	} else {
+		accountBox.classList.toggle("scale-y-100");
+		document.documentElement.classList.toggle("overflow-hidden");
+	}
+};
+
+menuButton.addEventListener("click", function (e) {
+	e.stopPropagation();
+	toggleMenu();
+});
+
+accountButton.addEventListener("click", function (e) {
+	console.log("userClick");
+	e.stopPropagation();
+	toggleAccount();
+});
+
+document.documentElement.addEventListener("click", function () {
+	if (accountBox.classList.contains("scale-y-100")) {
+		toggleAccount();
+	}
+	if (menuBox.classList.contains("scale-y-100")) {
+		toggleMenu();
+	}
+});
