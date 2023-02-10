@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/config.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darklight: "#1D2033",
+                        darked: "#171A29",
+                        pinked: "#FF477B",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="text-white ">
+    <header class="relative flex items-center justify-between col-span-4 p-4 bg-darked">
+        <figure>
+            <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
+        </figure>
+        <div class="flex items-center">
+            <p class="menu" id="burgermenu" aria-label="Main Menu">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </p>
+            <figure class="w-10 ml-4 mr-3 overflow-hidden rounded-full h-fit">
+                <img id="user-icon" src="./assets/images/product-6.png" alt="">
+            </figure>
+        </div>
+        <nav id="mobile-menu"
+            class="absolute z-50 drop-shadow-2xl flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-fit right-4 top-[85px] bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
+            <a href="#">Accueil</a>
+            <a href="#">Les Sims 4</a>
+            <a href="#">Télécharger</a>
+            <a href="#">Mises à jour</a>
+            <a href="#">Contenue séparé</a>
+            <a href="#">Contenue Personnalisé</a>
+            <a href="#">Communauté</a>
+            <a href="#">Triches</a>
+            <a href="#">Infos & mises à jour</a>
+
+        </nav>
+        <div id="account-menu"
+            class="absolute z-50 flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-fit right-4 top-[85px] bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
+            <div class="flex items-center mb-4">
+                <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                    <img src="./assets/images/product-6.png" alt="">
+                </figure>
+                <div class="leading-5 text-left">
+                    <p class="capitalize">JohnDoe <i class="fa-solid fa-badge-check text-pinked"></i></p>
+                    <span>@johndoe</span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <a href="./profil-me.html"><i class="pr-2 text-xl fa-solid fa-id-card "></i> Profil</a>
+                <a href="#"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i> Abonnement</a>
+                <a href="./setting-page.html"><i class="pr-2 text-xl fa-solid fa-gear "></i></i> Paramètre</a>
+                <a href="#" class="inline-block px-4 py-1 mt-5 text-sm uppercase rounded-lg w-fit bg-pinked">Se
+                    déconnecter</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <div id="welcome" class="relative col-span-4 bg-center bg-cover mb-14 h-36"
+        style="background-image: url('./assets/images/1008797.png');">
+
+        <div
+            class="flex justify-between p-4 pl-[70px] items-center absolute top-1/2 left-1/2 translate-x-[-46%] translate-y-[40%] bg-[#060813cc]/[0.8] backdrop-blur-sm w-4/5 rounded-lg">
+
+            <div class="text-left">
+                <p class="text-base uppercas">Dylanbernardoff <i class="fa-solid fa-badge-check text-pinked"></i>
+                </p>
+                <span class="text-base capitalize">administrateur</span>
+                <figure class="absolute top-0 w-20 mr-3 overflow-hidden rounded-full -left-6 h-fit">
+                    <img src="./assets/images/product-6.png" alt="">
+                </figure>
+            </div>
+            <div class="text-right">
+                <p>124K <i class="fa-solid fa-user"></i> </p>
+                <p>190K <i class="fa-solid fa-users"></i> </p>
+            </div>
+        </div>
+
+    </div>
+    <main class="grid grid-cols-4 gap-4 px-4 mb-4 text-center">
+        <!-- Btn Follow/message-->
+        <div class="flex justify-end col-span-4 pt-0 overflow-hidden">
+
+            <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                Suivre</a>
+            <a href="/" class="px-2 py-[3px] ml-2  uppercase w-fit rounded-md bg-pinked">
+                Message </a>
+
+        </div>
+        <!-- Private porfil -->
+        <div class="col-span-4 p-4 overflow-hidden text-center rounded-lg bg-darked">
+            <p>Vous ne pouvez pas voir ce profil car il est priver.</p>
+        </div>
+        </div>
+        <!-- About user -->
+        <div class="col-span-4 overflow-hidden text-center rounded-lg bg-darked">
+            <div class="p-3 bg-black">
+                <h3 class="uppercase">À PROPOS DE MOI</h3>
+            </div>
+            <p class="p-4">
+                Je suis un développeur web, mais pas que je fait aussi de la 3D.
+            </p>
+        </div>
+        <!-- Sing-up date -->
+        <div class="col-span-2 overflow-hidden text-center rounded-lg h-fit bg-darked">
+            <div class="p-3 bg-black">
+                <h3 class="uppercase">MEMBRE DEPUIS</h3>
+            </div>
+            <p class="p-4">
+                Le 10 Janvier 2023
+            </p>
+        </div>
+        <!-- Member roles -->
+        <div class="col-span-2 overflow-hidden text-center rounded-lg bg-darked">
+            <div class="p-3 bg-black">
+                <h3 class="uppercase">MEMBRE DE</h3>
+            </div>
+            <ul class="flex flex-col p-4">
+                <li class="p-1 mb-2 text-sm capitalize border-2 rounded-lg last:mb-0 ">Membre</li>
+                <li class="p-1 mb-2 text-sm text-yellow-300 capitalize border-2 border-yellow-300 rounded-lg last:mb-0">
+                    Super
+                    Membre <i class="fa-solid fa-gem"></i>
+                </li>
+                <li class="p-1 mb-2 text-sm capitalize border-2 rounded-lg border-pinked text-pinked last:mb-0">équipe
+                    <i class="fa-solid fa-badge-check"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- All posts -->
+        <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
+            <div class="p-3 bg-black ">
+                <h3 class="uppercase">DERNIER POSTE SUR LE FORUM</h3>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
+                <div class="flex items-center w-[70%] whitespace-nowrap overflow-hidden">
+                    <i class="p-4 mr-3 bg-black rounded-full fa-solid fa-newspaper"> </i>
+                    <p class="overflow-hidden text-normal text-ellipsis">Je test les post du forum</p>
+                </div>
+                <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                    Voir <i class="fa-solid fa-angles-right"></i></a>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
+                <div class="flex items-center w-[70%] whitespace-nowrap overflow-hidden">
+                    <i class="p-4 mr-3 bg-black rounded-full fa-solid fa-newspaper"> </i>
+                    <p class="overflow-hidden text-normal text-ellipsis">Je test les post du forum</p>
+                </div>
+                <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                    Voir <i class="fa-solid fa-angles-right"></i></a>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
+                <div class="flex items-center w-[70%] whitespace-nowrap overflow-hidden">
+                    <i class="p-4 mr-3 bg-black rounded-full fa-solid fa-newspaper"> </i>
+                    <p class="overflow-hidden text-normal text-ellipsis">Je test les post du forum</p>
+                </div>
+                <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                    Voir <i class="fa-solid fa-angles-right"></i></a>
+            </div>
+        </div>
+        <!-- Empty posts -->
+        <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
+            <div class="p-3 bg-black ">
+                <h3 class="uppercase">DERNIER POSTE SUR LE FORUM</h3>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
+                <p>Ce membre n’a jamais poster sur le forum.</p>
+            </div>
+        </div>
+        <!-- All comments -->
+        <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
+            <div class="p-3 bg-black ">
+                <h3 class="uppercase">DERNIER COMMENTAIRE</h3>
+            </div>
+            <div class="p-4 border-b-2 border-black last:border-none">
+                <div class="flex justify-between">
+                    <div class="flex items-center mb-4 ">
+                        <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                            <img src="./assets/images/product-7.png" alt="">
+                        </figure>
+                        <div class="text-left">
+                            <p class="capitalize">HomeBleu <i class="fa-solid fa-shield-check text-pinked"></i></p>
+                            <span class="capitalize">Modérateur </span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p>30/01/2023</p>
+                    </div>
+                </div>
+                <p class="text-left">Attention à vos commentaire ! Je vous surveille. </p>
+            </div>
+            <div class="p-4 border-b-2 border-black last:border-none">
+                <div class="flex justify-between">
+                    <div class="flex items-center mb-4 ">
+                        <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
+                            <img src="./assets/images/product-7.png" alt="">
+                        </figure>
+                        <div class="text-left">
+                            <p class="capitalize">HomeBleu <i class="fa-solid fa-shield-check text-pinked"></i></p>
+                            <span class="capitalize">Modérateur </span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p>30/01/2023</p>
+                    </div>
+                </div>
+                <p class="text-left">Attention à vos commentaire ! Je vous surveille. </p>
+            </div>
+        </div>
+        <!-- Empty comments -->
+        <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
+            <div class="p-3 bg-black ">
+                <h3 class="uppercase">DERNIER COMMENTAIRE</h3>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
+                <p>Ce membre n’a jamais poster de commentaire.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer class="grid grid-cols-4 py-5 text-center justify-items-center bg-darked">
+        <figure class="col-span-4 mb-4">
+            <img src="./assets/images/logo.png" alt="" class="w-32" />
+        </figure>
+        <div class="flex col-span-4 mb-4">
+            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
+                    class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
+                    class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
+                    class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <div class="flex col-span-4 mb-3">
+            <a href="" class="px-1 border-r-2">Conditions Générales</a>
+            <a href="" class="px-1">Protection des données</a>
+        </div>
+        <span class="col-span-4 text-xs">© Copyright 2023 SimsDL.fr tous droits réservés.</span>
+    </footer>
+    <script>
+        const swiperCheat = new Swiper(".swiper-cheat", {
+            // Optional parameters
+            loop: false,
+            direction: 'horizontal',
+            // If we need pagination
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-cheat-btn-next",
+                prevEl: ".swiper-cheat-btn-prev",
+            },
+
+        });
+
+        const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            loop: false,
+            direction: 'horizontal',
+            // If we need pagination
+            slidesPerView: 2,
+            spaceBetween: 5,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-btn-next",
+                prevEl: ".swiper-btn-prev",
+            },
+
+        });
+    </script>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

@@ -35,7 +35,6 @@ menuButton.addEventListener("click", function (e) {
 });
 
 accountButton.addEventListener("click", function (e) {
-	console.log("userClick");
 	e.stopPropagation();
 	toggleAccount();
 });
