@@ -27,7 +27,7 @@
 </head>
 
 <body class="text-white">
-    <header class="relative flex items-center justify-between col-span-4 p-4 bg-darked">
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
@@ -73,12 +73,13 @@
                 <a href="./profil-me.html"><i class="pr-2 text-xl fa-solid fa-id-card "></i> Profil</a>
                 <a href="./sub-page.html"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i> Abonnement</a>
                 <a href="./setting-page.html"><i class="pr-2 text-xl fa-solid fa-gear "></i></i> Paramètre</a>
-                <a href="#" class="inline-block px-4 py-1 mt-5 text-sm uppercase rounded-lg w-fit bg-pinked">Se
+                <a href="./login-page.html"
+                    class="inline-block px-4 py-1 mt-5 text-sm uppercase rounded-lg w-fit bg-pinked">Se
                     déconnecter</a>
             </div>
         </div>
     </header>
-    <main class="grid grid-cols-4 gap-4 p-4 ">
+    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px]">
         <!-- Module Welcome -->
         <div id="welcome" class="col-span-4 text-center">
             <div class="col-span-4 p-5 rounded-lg bg-darked">
@@ -101,7 +102,7 @@
                 <div class="nav-swiper swiper-btn-prev"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="nav-swiper swiper-btn-next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
-            <div class="col-span-4 swiper">
+            <div class="overflow-hidden swiper">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
@@ -149,13 +150,24 @@
                 <h1>Triches</h1>
                 <p>Astuce de triches pour les sims 4</p>
             </div>
-            <div class="flex justify-end col-span-4 mb-5">
+            <div class="flex justify-end mb-4">
                 <div class="nav-swiper swiper-cheat-btn-prev"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="nav-swiper swiper-cheat-btn-next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
-            <div class="swiper-cheat">
+            <div class="overflow-hidden swiper-cheat">
                 <div class="text-center swiper-wrapper">
                     <!-- Slides -->
+                    <div id="card"
+                        class="relative h-auto overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg swiper-slide"
+                        style="background-image: url('./assets/images/bg-cheat.png')">
+                        <div class="flex flex-col justify-center w-full h-full p-4 backdrop-brightness-50">
+                            <h3>Comment avoir plus de SIMFLOUZ</h3>
+                            <p>Voicie comment troches pour avoir plus d’argent dans Les Sims 4.</p>
+                            <a href="./"
+                                class="inline-block p-2 py-[3px] m-auto text-sm uppercase rounded-lg w-fit bg-pinked">Voir
+                                plus</a>
+                        </div>
+                    </div>
                     <div id="card"
                         class="relative h-auto overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg swiper-slide"
                         style="background-image: url('./assets/images/bg-cheat.png')">
