@@ -626,7 +626,7 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 32 51 / var(--tw-bg-opacity));
+  background-color: rgb(255 71 123 / var(--tw-bg-opacity));
 }
 
 .sr-only {

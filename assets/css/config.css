@@ -45,12 +45,12 @@
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		@apply bg-pinked rounded-lg;
+		@apply rounded-lg bg-pinked;
 	}
 
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-		@apply bg-darklight;
+		@apply bg-pinked;
 	}
 }
 
