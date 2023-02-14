@@ -69,22 +69,23 @@
         </div>
     </header>
 
-    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px] text-center">
+    <main
+        class="grid grid-cols-4 gap-4 p-4 pt-[88px] text-center lg:text-left lg:grid-cols-12 lg:gap-10 lg:items-center lg:px-24">
 
-        <div class="col-span-4 text-left">
-            <ul class="flex col-span-4 ">
-                <li><i class="mr-2 fa-solid fa-house"></i>Home</li>
-                <li><i class="mx-1 fa-regular fa-angle-right"></i> Title Page</li>
-                <li><i class="mx-1 fa-regular fa-angle-right"></i> Title Page</li>
-            </ul>
-            <span class="col-span-4 text-xs ">Publier le mercredi 25 janvier 2023.</span>
-        </div>
         <!-- Hero section -->
-        <div id="page-hero" class="col-span-4 ">
-            <div class="p-5 bg-center bg-no-repeat bg-cover rounded-lg"
+        <div id="page-hero" class="col-span-4 lg:col-span-12">
+            <div class="mb-4 text-left">
+                <ul class="flex col-span-4 ">
+                    <li><i class="mr-2 fa-solid fa-house"></i>Home</li>
+                    <li><i class="mx-1 fa-regular fa-angle-right"></i> Title Page</li>
+                    <li><i class="mx-1 fa-regular fa-angle-right"></i> Title Page</li>
+                </ul>
+                <span class="col-span-4 text-xs ">Publier le mercredi 25 janvier 2023.</span>
+            </div>
+            <div class="p-5 mb-4 bg-center bg-no-repeat bg-cover rounded-lg lg:py-20"
                 style="background-image: url('./assets/images/01_top.jpeg')">
-                <div class="p-4 text-left rounded-lg backdrop-blur-sm backdrop-brightness-50">
-                    <span>Kit</span>
+                <div class="p-4 text-left rounded-lg lg:w-1/2 backdrop-blur-sm backdrop-brightness-50">
+                    <span>Kit d'objets</span>
                     <h1 class="mb-4 uppercase">Kit les sims 4 objets de salle de bain</h1>
                     <a href="/" class="inline-block text-xs btn-primary">
                         <i class="mr-1 fa-solid fa-download"></i>Télécharger</a>
@@ -93,7 +94,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-span-4 mt-4">
+            <div>
                 <p>Recréez le désordre de la vie quotidienne ou élaborez une oasis bien organisée avec le kit Les
                     Sims 4 Objets de salle de bain. Ce kit inclut des décorations pour tous les âges, des adorables
                     stickers muraux pour enfants aux dentiers de mamie. Créez une image réaliste d'une famille en
@@ -105,14 +106,17 @@
             </div>
         </div>
         <!-- Modal section -->
-        <div class="col-span-4 ">
+        <div class="col-span-4 lg:col-span-6 ">
             <h2>Qu'est-ce qui est inclus?</h2>
-            <p class="mb-2">Parcourez le contenu de ce pack et laissez-vous inspirer par davantage d'articles de mode,
+            <p class="">Parcourez le contenu de ce pack et laissez-vous inspirer par davantage d'articles de mode,
                 de
                 meubles, de coiffures et de décorations. Imaginez tout ce que vous ferez ensuite !
             </p>
+        </div>
+
+        <div class="col-span-4 lg:col-span-6 lg:m-auto">
             <button class="btn-primary" id="btn-modal-open">
-                Afficher les articles</button>
+                Parcourez le contenu de ce pack</button>
             <!-- Modal img -->
             <div id="modal-parent"
                 class="fixed top-0 left-0 z-40 flex items-center justify-center hidden w-full h-full backdrop-blur-sm backdrop-brightness-50">
@@ -156,34 +160,42 @@
             </div> -->
         </div>
 
-        <div class="col-span-4 ">
-            <div>
-                <h2>Une pièce familiale</h2>
-                <p>Ce kit inclut des objets pour tous les Sims, des adorables stickers muraux pour les enfants aux
-                    dentiers de mamie. Dressez le portrait réaliste d'une famille en ajoutant de petites touches
-                    personnelles pour chaque âge.
-                </p>
-            </div>
-            <figure class="mt-4 overflow-hidden rounded-lg">
+        <div class="col-span-4 lg:col-span-6 ">
+            <figure class="overflow-hidden rounded-lg">
                 <img src="./assets/images/TS4_Bathroom-Clutter_Media-Hero-Tile_16x9_02.jpeg" alt="">
             </figure>
         </div>
 
-        <div class="col-span-4">
-            <div>
-                <h2>Un espace personnel personnalisé</h2>
-                <p>Transformez la salle de bain de votre Sim en refuge élégant pour s'évader du chaos de la vie, ou
-                    laissez ce chaos envahir aussi cet espace. Avec ce kit, vous pouvez créer des espaces reflétant la
-                    personnalité d'une grande diversité de Sims.
-                </p>
-            </div>
-            <figure class="mt-4 overflow-hidden rounded-lg">
+        <div class="col-span-4 lg:col-span-6 ">
+
+            <h2>Une pièce familiale</h2>
+            <p>Ce kit inclut des objets pour tous les Sims, des adorables stickers muraux pour les enfants aux
+                dentiers de mamie. Dressez le portrait réaliste d'une famille en ajoutant de petites touches
+                personnelles pour chaque âge.
+            </p>
+
+
+        </div>
+
+        <div class="col-span-4 lg:col-span-6">
+
+            <h2>Un espace personnel personnalisé</h2>
+            <p>Transformez la salle de bain de votre Sim en refuge élégant pour s'évader du chaos de la vie, ou
+                laissez ce chaos envahir aussi cet espace. Avec ce kit, vous pouvez créer des espaces reflétant la
+                personnalité d'une grande diversité de Sims.
+            </p>
+
+
+        </div>
+
+        <div class="col-span-4 lg:col-span-6">
+            <figure class="overflow-hidden rounded-lg">
                 <img src="./assets/images/TS4_Bathroom-Clutter_Media-Hero-Tile_16x9_01.jpeg" alt="">
             </figure>
         </div>
 
-        <div class="col-span-4">
-            <div class="p-4 rounded-lg bg-darked">
+        <div class="col-span-4 text-center lg:col-span-12">
+            <div class="p-4 rounded-lg lg:px-32 bg-darked">
                 <h3>Pourquoi je ne peux pas accéder au téléchargement ?</h3>
                 <p class="mb-2">Pour pouvoir accéder au téléchargement vous devez impérativement vous inscrire où vous
                     connecter à
@@ -198,7 +210,7 @@
             </div>
         </div>
         <!-- Download Section -->
-        <div class="col-span-4">
+        <div class="col-span-4 text-center lg:col-span-12 ">
             <div class="overflow-hidden rounded-lg bg-darked">
                 <div class="flex items-center justify-between p-3 bg-black">
                     <h3 class="uppercase">téléchargement</h3>
@@ -221,7 +233,8 @@
                 </div>
                 <div class="p-4 last:border-0">
                     <p class="text-2xl uppercase">DESCRIPTION</p>
-                    <p class="px-4">Pour installer ce kit, vous avez besoin de la version 1.93.146 déjà installée.Ce
+                    <p class="lg:px-32">Pour installer ce kit, vous avez besoin de la version 1.93.146 déjà
+                        installée.Ce
                         téléchargement
                         inclut les mises à jour 1.93.146 + 1.94.147 + Intimate Fashion Kit + Bath and Hygiene Kit à
                         partir du 19 janvier 2022.</p>
@@ -229,13 +242,13 @@
             </div>
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <div class="overflow-hidden rounded-lg bg-darked">
                 <div class="p-3 text-left bg-black">
                     <h3 class="uppercase">installation</h3>
                 </div>
-                <div class="p-4">
-                    <h3 class="mb-5 uppercase">DÉSACTIVER L'ANTVIRUS</h3>
+                <div class="p-4 lg:px-32">
+                    <h3 class="mb-5 text-center uppercase">DÉSACTIVER L'ANTVIRUS</h3>
                     <p>
                         1 - Après avoir terminé le téléchargement, nous aurons un fichier .zip avec le nom : "Les Sims 4
                         - Salle de bain Clutter + Simtimates Collection.<br /><br />
@@ -258,12 +271,12 @@
             </div>
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 text-center lg:col-span-12">
             <div class="overflow-hidden rounded-lg bg-darked">
                 <div class="p-3 text-left bg-black">
                     <h3 class="uppercase">FAQ</h3>
                 </div>
-                <div class="p-4">
+                <div class="p-4 lg:px-32">
                     <h3 class="">Erreur d'initialisation et/ou textes vides, que faire ?</h3>
                     <p class="my-5">
                         Téléchargez et installez la traduction.
@@ -281,7 +294,7 @@
             </div>
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <div class="flex justify-between col-span-4 p-4 overflow-hidden rounded-lg bg-darked">
                 <div class="flex items-center">
                     <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
@@ -299,7 +312,7 @@
             </div>
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <div class="text-left">
                 <h2>Articles</h2>
                 <p>Une description détaillé</p>
@@ -347,11 +360,48 @@
                             </div>
                         </a>
                     </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <a href="./details-page.html">
+                        <figure class="overflow-hidden">
+                            <img src="./assets/images/02.jpeg" alt="" class="" />
+                        </figure>
+                        <div class="p-3">
+                            <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                decor</span>
+                            <p>Kit les Sims 4 Objets de salle de bain</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+        </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <div class="mb-4 text-left ">
                 <h2>Espace commentaire</h2>
                 <p>Ci-dessous les commentaire des autre membre</p>
@@ -434,7 +484,7 @@
 
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <div class="mb-4 text-left">
                 <h2>Commentaire</h2>
                 <p>Publier un commentaire sur l’article</p>
@@ -448,7 +498,7 @@
             </form>
         </div>
 
-        <div class="col-span-4 p-5 rounded-lg bg-darked">
+        <div class="col-span-4 p-4 text-center rounded-lg lg:col-span-12 bg-darked ">
             <h2>Pourquoi je ne peux pas écrire de commentaires ?</h2>
             <p class="mb-2">Pour pouvoir publier un commentaire merci de vous connecter.
             </p>
@@ -496,6 +546,16 @@
                 nextEl: ".swiper-btn-next",
                 prevEl: ".swiper-btn-prev",
             },
+            breakpoints: {
+                600: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                }
+            }
 
         });
     </script>
