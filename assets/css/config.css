@@ -34,6 +34,24 @@
 	.btn-primary {
 		@apply inline-block p-2 text-center uppercase rounded-lg bg-pinked;
 	}
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		@apply bg-darked;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		@apply bg-pinked rounded-lg;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		@apply bg-darklight;
+	}
 }
 
 /* Swiper nav */
