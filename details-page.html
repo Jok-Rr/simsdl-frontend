@@ -2,35 +2,19 @@
 <html lang="en">
 
 <head>
+    <title>Article</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
-    <title>Home Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/config.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darklight: "#1D2033",
-                        darked: "#171A29",
-                        pinked: "#FF477B",
-                        black: "#0C0D15",
-                        grey: "#8E8E8E"
-                    },
-                },
-            },
-        };
-    </script>
 </head>
 
-<body class="text-white ">
-    <header class="relative flex items-center justify-between col-span-4 p-4 bg-darked">
+<body>
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
@@ -73,33 +57,36 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <a href="./profil-me.html"><i class="pr-2 text-xl fa-solid fa-id-card "></i> Profil</a>
-                <a href="./sub-page.html"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i> Abonnement</a>
-                <a href="./setting-page.html"><i class="pr-2 text-xl fa-solid fa-gear "></i></i> Paramètre</a>
-                <a href="#" class="inline-block px-4 py-1 mt-5 text-sm uppercase rounded-lg w-fit bg-pinked">Se
+                <a href="./profil-me.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-id-card "></i>
+                    Profil</a>
+                <a href="./sub-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i>
+                    Abonnement</a>
+                <a href="./setting-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-gear "></i></i>
+                    Paramètre</a>
+                <a href="./login-page.html" class="p-0 btn-primary ">Se
                     déconnecter</a>
             </div>
         </div>
     </header>
-    <main class="grid grid-cols-4 gap-4 p-4 text-center">
 
-        <div class="col-span-4">
+    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px] text-center">
+
+        <div class="col-span-4 text-left">
             <ul class="flex col-span-4 ">
                 <li><i class="mr-2 fa-solid fa-house"></i>Home</li>
-                <li><i class="mx-2 fa-regular fa-angle-right"></i> Title Page</li>
-                <li><i class="mx-2 fa-regular fa-angle-right"></i> Title Page</li>
+                <li><i class="mx-1 fa-regular fa-angle-right"></i> Title Page</li>
+                <li><i class="mx-1 fa-regular fa-angle-right"></i> Title Page</li>
             </ul>
-            <span class="col-span-4 text-xs text-left">Publier le mercredi 25 janvier 2023.</span>
+            <span class="col-span-4 text-xs ">Publier le mercredi 25 janvier 2023.</span>
         </div>
-        <!-- Module Welcome -->
-        <div id="page-hero" class="col-span-4">
+        <!-- Hero section -->
+        <div id="page-hero" class="col-span-4 ">
             <div class="p-5 bg-center bg-no-repeat bg-cover rounded-lg"
                 style="background-image: url('./assets/images/01_top.jpeg')">
                 <div class="p-4 text-left rounded-lg backdrop-blur-sm backdrop-brightness-50">
                     <span>Kit</span>
-                    <h1 class="text-2xl uppercase">Kit les sims 4 objets de salle de bain</h1>
-                    <a href="/"
-                        class="px-2 mt-5 py-[3px] m-auto inline-block text-xs uppercase rounded-md w-fit bg-pinked">
+                    <h1 class="mb-4 uppercase">Kit les sims 4 objets de salle de bain</h1>
+                    <a href="/" class="inline-block text-xs btn-primary">
                         <i class="mr-1 fa-solid fa-download"></i>Télécharger</a>
                     <p class="mt-2 text-xs">Disponible sur <i class="mx-1 fa-brands fa-windows"></i><i
                             class="mx-1 fa-brands fa-apple"></i>
@@ -117,13 +104,14 @@
                 </p>
             </div>
         </div>
-
-        <div class="col-span-4">
-            <h2 class="text-2xl">Qu'est-ce qui est inclus?</h2>
-            <p>Parcourez le contenu de ce pack et laissez-vous inspirer par davantage d'articles de mode, de
+        <!-- Modal section -->
+        <div class="col-span-4 ">
+            <h2>Qu'est-ce qui est inclus?</h2>
+            <p class="mb-2">Parcourez le contenu de ce pack et laissez-vous inspirer par davantage d'articles de mode,
+                de
                 meubles, de coiffures et de décorations. Imaginez tout ce que vous ferez ensuite !
             </p>
-            <button class="px-2 mt-1 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked" id="btn-modal-open">
+            <button class="btn-primary" id="btn-modal-open">
                 Afficher les articles</button>
             <!-- Modal img -->
             <div id="modal-parent"
@@ -132,22 +120,22 @@
                     class="relative w-3/4 p-4 text-left duration-200 origin-top scale-y-0 rounded-lg bg-darked">
                     <i class="absolute cursor-pointer right-3 top-3 fa-solid fa-xmark" id="close-modal"></i>
                     <div class="mb-4">
-                        <h1>TITLE DE LA MODAL</h1>
+                        <h3>TITLE DE LA MODAL</h3>
                         <p>Description de la modal</p>
                     </div>
                     <figure class="flex flex-wrap justify-center">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
-                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-14">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
+                        <img src="./assets/images/modal-img.jpeg" alt="" class="h-20">
                     </figure>
                 </div>
             </div>
@@ -158,7 +146,7 @@
                     class="relative w-3/4 p-4 text-left duration-200 origin-top scale-y-0 rounded-lg bg-darked">
                     <i class="absolute cursor-pointer right-3 top-3 fa-solid fa-xmark" id="close-modal"></i>
                     <div class="mb-4">
-                        <h1>TITLE DE LA MODAL</h1>
+                        <h3>TITLE DE LA MODAL</h3>
                         <p>Description de la modal</p>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est expedita perferendis possimus odit
@@ -168,9 +156,9 @@
             </div> -->
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 ">
             <div>
-                <h2 class="text-2xl">Une pièce familiale</h2>
+                <h2>Une pièce familiale</h2>
                 <p>Ce kit inclut des objets pour tous les Sims, des adorables stickers muraux pour les enfants aux
                     dentiers de mamie. Dressez le portrait réaliste d'une famille en ajoutant de petites touches
                     personnelles pour chaque âge.
@@ -182,8 +170,8 @@
         </div>
 
         <div class="col-span-4">
-            <div class="col-span-4">
-                <h2 class="text-2xl">Un espace personnel personnalisé</h2>
+            <div>
+                <h2>Un espace personnel personnalisé</h2>
                 <p>Transformez la salle de bain de votre Sim en refuge élégant pour s'évader du chaos de la vie, ou
                     laissez ce chaos envahir aussi cet espace. Avec ce kit, vous pouvez créer des espaces reflétant la
                     personnalité d'une grande diversité de Sims.
@@ -196,38 +184,39 @@
 
         <div class="col-span-4">
             <div class="p-4 rounded-lg bg-darked">
-                <p>Pourquoi je ne peux pas accéder au téléchargement ?</p>
-                <p>Pour pouvoir accéder au téléchargement vous devez impérativement vous inscrire où vous connecter à
+                <h3>Pourquoi je ne peux pas accéder au téléchargement ?</h3>
+                <p class="mb-2">Pour pouvoir accéder au téléchargement vous devez impérativement vous inscrire où vous
+                    connecter à
                     votre compte.
                 </p>
                 <div>
-                    <a href="/" class="px-2 mt-5 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                    <a href="./login-page.html" class="btn-primary">
                         Connexion</a>
-                    <a href="/" class="px-2 mt-5 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                    <a href="./register-page.html" class="btn-primary">
                         inscription</a>
                 </div>
             </div>
         </div>
-
+        <!-- Download Section -->
         <div class="col-span-4">
             <div class="overflow-hidden rounded-lg bg-darked">
-                <div class="flex justify-between p-3 bg-black">
+                <div class="flex items-center justify-between p-3 bg-black">
                     <h3 class="uppercase">téléchargement</h3>
-                    <span class="px-2 border rounded-xl">10GO</span>
+                    <span class="p-2 border rounded-xl">10GO</span>
                 </div>
                 <div class="p-4 border-b-2 border-black last:border-0">
                     <p class="text-2xl uppercase">Torrent</p>
-                    <a href="/" class="px-2 mt-2 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                    <a href="/" class="btn-primary">
                         Télécharger</a>
                 </div>
                 <div class="p-4 border-b-2 border-black last:border-0">
                     <p class="text-2xl uppercase">Débug</p>
-                    <a href="/" class="px-2 mt-2 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                    <a href="/" class="btn-primary">
                         Télécharger</a>
                 </div>
                 <div class="p-4 border-b-2 border-black last:border-0">
                     <p class="text-2xl uppercase">Traduction</p>
-                    <a href="/" class="px-2 mt-2 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                    <a href="/" class="btn-primary">
                         Télécharger</a>
                 </div>
                 <div class="p-4 last:border-0">
@@ -242,12 +231,12 @@
 
         <div class="col-span-4">
             <div class="overflow-hidden rounded-lg bg-darked">
-                <div class="flex justify-between p-3 bg-black">
+                <div class="p-3 text-left bg-black">
                     <h3 class="uppercase">installation</h3>
                 </div>
                 <div class="p-4">
-                    <p class="text-2xl uppercase">DÉSACTIVER L'ANTVIRUS</p>
-                    <p class="mt-5">
+                    <h3 class="mb-5 uppercase">DÉSACTIVER L'ANTVIRUS</h3>
+                    <p>
                         1 - Après avoir terminé le téléchargement, nous aurons un fichier .zip avec le nom : "Les Sims 4
                         - Salle de bain Clutter + Simtimates Collection.<br /><br />
                         2 - Extrayez, ouvrez le dossier Update , copiez tous les dossiers et collez à l'emplacement
@@ -271,21 +260,21 @@
 
         <div class="col-span-4">
             <div class="overflow-hidden rounded-lg bg-darked">
-                <div class="flex justify-between p-3 bg-black">
+                <div class="p-3 text-left bg-black">
                     <h3 class="uppercase">FAQ</h3>
                 </div>
                 <div class="p-4">
-                    <p class="text-lg">Erreur d'initialisation et/ou textes vides, que faire ?</p>
+                    <h3 class="">Erreur d'initialisation et/ou textes vides, que faire ?</h3>
                     <p class="my-5">
                         Téléchargez et installez la traduction.
                     </p>
-                    <p class="text-lg">En cas d'erreur, téléchargez le dossier Game/BIN ci-dessous :</p>
+                    <h3>En cas d'erreur, téléchargez le dossier Game/BIN ci-dessous :</h3>
                     <p class="my-5">
                         Téléchargez le dossier 'Game/Bin' complet, contient tous les fichiers nécessaires pour la
                         v1.94.147, si vous allez le télécharger, supprimez d'abord le vôtre puis collez celui-ci en
                         place.
                     </p>
-                    <a href="/" class="px-2 mt-2 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                    <a href="/" class="btn-primary">
                         Télécharger</a>
                 </div>
 
@@ -312,10 +301,10 @@
 
         <div class="col-span-4">
             <div class="text-left">
-                <h1>Articles</h1>
+                <h2>Articles</h2>
                 <p>Une description détaillé</p>
             </div>
-            <div class="flex justify-end col-span-4 mb-4">
+            <div class="flex justify-end mb-4">
                 <div class="nav-swiper swiper-btn-prev"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="nav-swiper swiper-btn-next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
@@ -363,11 +352,11 @@
         </div>
 
         <div class="col-span-4">
-            <div class="col-span-4 mb-4 text-left">
-                <h1>Espace commentaire</h1>
+            <div class="mb-4 text-left ">
+                <h2>Espace commentaire</h2>
                 <p>Ci-dessous les commentaire des autre membre</p>
             </div>
-            <div class="col-span-4 p-4 mb-4 overflow-hidden rounded-lg bg-darked">
+            <div class="p-4 mb-4 overflow-hidden rounded-lg bg-darked">
                 <div class="flex justify-between mb-4">
                     <div class="flex items-center ">
                         <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
@@ -446,32 +435,31 @@
         </div>
 
         <div class="col-span-4">
-            <div class="text-left">
-                <h1>Commentaire</h1>
+            <div class="mb-4 text-left">
+                <h2>Commentaire</h2>
                 <p>Publier un commentaire sur l’article</p>
             </div>
             <form class="text-right " action="" method="post">
-                <span class="block mb-2 text-left">COMMENTAIRE</span>
                 <textarea name="" id="" cols="30" rows="10"
-                    class="w-full h-40 p-4 border-2 rounded-lg outline-none resize-none bg-darked border-grey focus:border-pinked"
+                    class="w-full h-40 p-4 mb-2 border-2 rounded-lg outline-none resize-none bg-darked border-grey focus:border-pinked"
                     placeholder="Saisissez votre commentaire"></textarea>
-                <button type="submit"
-                    class="px-2 mt-2 py-[3px] m-auto inline-block uppercase text-right rounded-md bg-pinked">
+                <button type="submit" class="btn-primary">
                     publier</button>
             </form>
-
         </div>
+
         <div class="col-span-4 p-5 rounded-lg bg-darked">
-            <p>Pourquoi je ne peux pas écrire de commentaires ?</p>
-            <p>Pour pouvoir publier un commentaire merci de vous connecter.
+            <h2>Pourquoi je ne peux pas écrire de commentaires ?</h2>
+            <p class="mb-2">Pour pouvoir publier un commentaire merci de vous connecter.
             </p>
             <div>
-                <a href="/" class="px-2 mt-5 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                <a href="/" class="btn-primary">
                     Connexion</a>
-                <a href="/" class="px-2 mt-5 py-[3px] m-auto inline-block uppercase rounded-md bg-pinked">
+                <a href="/" class="btn-primary">
                     inscription</a>
             </div>
         </div>
+
     </main>
     <footer class="grid grid-cols-4 py-4 text-center justify-items-center bg-darked">
         <figure class="col-span-4 mb-4">

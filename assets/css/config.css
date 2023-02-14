@@ -1,33 +1,48 @@
-@font-face {
-	font-family: "The Sims Sans";
-	font-weight: bold;
-	src: local("The Sims Sans Bold"),
-		url("../font/The_Sims_Sans-Bold.otf") format("otf");
-}
-@font-face {
-	font-family: "The Sims Sans";
-	font-style: normal;
-	src: local("The Sims Sans"), url("../font/The_Sims_Sans.otf") format("otf");
-}
-html {
-	font-family: "The Sims Sans" !important;
-	background-color: #1d2033;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "The Sims Sans";
+		font-weight: bold;
+		src: url("../font/The_Sims_Sans-Bold.otf");
+	}
+	@font-face {
+		font-family: "The Sims Sans";
+		font-style: normal;
+		src: url("../font/The_Sims_Sans.otf");
+	}
+	html {
+		@apply leading-none text-white bg-darklight;
+	}
+	h1 {
+		@apply text-3xl font-bold;
+	}
+	h2 {
+		@apply text-2xl font-bold;
+	}
+	h3 {
+		@apply text-xl font-bold;
+	}
+	p {
+		@apply leading-normal;
+	}
 }
 
-h1 {
-	font-weight: bold !important;
-	font-size: 30px;
-	line-height: normal !important;
+@layer components {
+	.btn-primary {
+		@apply inline-block p-2 text-center uppercase rounded-lg bg-pinked;
+	}
 }
-h3 {
-	font-size: 20px;
-	font-weight: bold !important;
-}
+
+/* Swiper nav */
 .swiper,
 .swiper-cheat {
 	height: auto;
 	width: 100%;
 }
+
 .nav-swiper {
 	background-color: #171a29;
 	padding: 5px 10px;
@@ -42,7 +57,7 @@ h3 {
 .nav-swiper i {
 	font-weight: 900;
 }
-
+/* DropDown Menu */
 .line {
 	fill: none;
 	stroke: white;
@@ -51,33 +66,36 @@ h3 {
 	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
 		stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .line1 {
 	stroke-dasharray: 60 207;
 	stroke-width: 6;
 }
+
 .line2 {
 	stroke-dasharray: 60 60;
 	stroke-width: 6;
 }
+
 .line3 {
 	stroke-dasharray: 60 207;
 	stroke-width: 6;
 }
+
 .opened .line1 {
 	stroke-dasharray: 90 207;
 	stroke-dashoffset: -134;
 	stroke-width: 6;
 }
+
 .opened .line2 {
 	stroke-dasharray: 1 60;
 	stroke-dashoffset: -30;
 	stroke-width: 6;
 }
+
 .opened .line3 {
 	stroke-dasharray: 90 207;
 	stroke-dashoffset: -134;
 	stroke-width: 6;
-}
-input {
-	font-family: Verdana !important;
 }
