@@ -32,13 +32,13 @@
 
 @layer components {
 	.btn-primary {
-		@apply inline-block p-[10px] text-center uppercase rounded-sm bg-pinked;
+		@apply inline-block p-[10px] text-center uppercase rounded-sm bg-pinked hover:scale-[102%] transition-all;
 	}
 	.btn-secondary {
-		@apply inline-block p-[10px] text-center uppercase border-2 rounded-sm border-pinked;
+		@apply inline-block p-[10px] text-center uppercase border-2 rounded-sm border-pinked hover:scale-[102%] transition-all;
 	}
 	.input-styled {
-		@apply p-2 transition-colors duration-700 border-2 border-gray-500 rounded-lg outline-none resize-none bg-darked focus:border-pinked hover:border-pinked;
+		@apply p-2 transition-all duration-700 border-2 border-gray-500 rounded-md shadow-md outline-none resize-none shadow-gray-500 focus:shadow-pink-500 hover:shadow-pink-500 bg-darked focus:border-pinked hover:border-pinked;
 	}
 	::-webkit-scrollbar {
 		width: 8px;
