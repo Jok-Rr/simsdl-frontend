@@ -87,10 +87,11 @@
         </div>
     </header>
 
-    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px]">
+    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px] lg:text-left lg:grid-cols-12 lg:gap-10 lg:px-44">
         <!-- Module Welcome -->
-        <div id="welcome" class="col-span-4 text-center">
-            <div class="col-span-4 p-5 rounded-lg bg-darked">
+        <div class="col-span-4 bg-center bg-no-repeat bg-cover rounded-lg lg:col-span-12 lg:p-5 lg:py-20 "
+            style="background-image: url('./assets/images/01_top.jpeg')">
+            <div class="col-span-4 p-5 text-center rounded-lg lg:w-1/2 bg-darked">
                 <h1 class="mb-2">Jouer avec les amis</h1>
                 <p>
                     Les Sims 4 est le jeu de simulation de vie ultime : créez des
@@ -99,9 +100,8 @@
                 </p>
             </div>
         </div>
-        <a href="/" class="col-span-4 btn-primary">Télécharger</a>
         <!-- Module Slider -->
-        <div id="slider" class="col-span-4">
+        <div id="slider" class="col-span-4 lg:col-span-12">
             <div class="">
                 <h2>Title</h2>
                 <p>Une description détaillé</p>
@@ -149,11 +149,47 @@
                             </div>
                         </a>
                     </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="card" class="h-auto col-span-2 overflow-hidden rounded-lg swiper-slide bg-darked">
+                        <a href="./details-page.html">
+                            <figure class="overflow-hidden">
+                                <img src="./assets/images/02.jpeg" alt="" class="" />
+                            </figure>
+                            <div class="p-3">
+                                <span class="inline-block p-1 mb-3 text-xs uppercase border-2 rounded-lg">Architecture &
+                                    decor</span>
+                                <p>Kit les Sims 4 Objets de salle de bain</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <div class="">
                 <h2>Triches</h2>
                 <p>Astuce de triches pour les sims 4</p>
@@ -171,7 +207,7 @@
                         <div class="flex flex-col justify-center w-full h-full p-4 backdrop-brightness-50">
                             <h3>Comment avoir plus de SIMFLOUZ</h3>
                             <p class="mb-2">Voicie comment troches pour avoir plus d’argent dans Les Sims 4.</p>
-                            <a href="./" class="btn-primary">Voir
+                            <a href="./" class="m-auto btn-primary w-fit">Voir
                                 plus</a>
                         </div>
                     </div>
@@ -181,7 +217,17 @@
                         <div class="flex flex-col justify-center w-full h-full p-4 backdrop-brightness-50">
                             <h3>Comment avoir plus de SIMFLOUZ</h3>
                             <p class="mb-2">Voicie comment troches pour avoir plus d’argent dans Les Sims 4.</p>
-                            <a href="./" class="btn-primary">Voir
+                            <a href="./" class="m-auto btn-primary w-fit">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div id="card"
+                        class="relative h-auto overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg swiper-slide"
+                        style="background-image: url('./assets/images/bg-cheat.png')">
+                        <div class="flex flex-col justify-center w-full h-full p-4 backdrop-brightness-50">
+                            <h3>Comment avoir plus de SIMFLOUZ</h3>
+                            <p class="mb-2">Voicie comment troches pour avoir plus d’argent dans Les Sims 4.</p>
+                            <a href="./" class="m-auto btn-primary w-fit">Voir
                                 plus</a>
                         </div>
                     </div>
@@ -224,6 +270,12 @@
                 nextEl: ".swiper-cheat-btn-next",
                 prevEl: ".swiper-cheat-btn-prev",
             },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
 
         });
 
@@ -240,6 +292,12 @@
                 nextEl: ".swiper-btn-next",
                 prevEl: ".swiper-btn-prev",
             },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                }
+            }
 
         });
     </script>
