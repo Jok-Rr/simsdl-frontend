@@ -32,10 +32,10 @@
 
 @layer components {
 	.btn-primary {
-		@apply inline-block p-2 text-center uppercase rounded-lg bg-pinked;
+		@apply inline-block p-[10px] text-center uppercase rounded-sm bg-pinked;
 	}
 	.btn-secondary {
-		@apply inline-block p-2 text-center uppercase border-2 rounded-lg border-pinked;
+		@apply inline-block p-[10px] text-center uppercase border-2 rounded-sm border-pinked;
 	}
 	.input-styled {
 		@apply p-2 border-2 border-gray-500 rounded-lg outline-none resize-none bg-darked focus:border-pinked;
