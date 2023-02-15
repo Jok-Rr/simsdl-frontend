@@ -1096,6 +1096,10 @@ p {
   width: 100vw;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
