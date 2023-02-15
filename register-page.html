@@ -14,16 +14,17 @@
 </head>
 
 <body>
-    <main class="grid grid-cols-4 gap-4 p-4 ">
+    <main class="grid grid-cols-4 gap-4 p-4 lg:grid-cols-12 lg:px-44 ">
         <!-- Module Welcome -->
-        <div id="welcome" class="col-span-4 text-center">
+        <div id="welcome" class="col-span-4 text-center lg:col-span-6 lg:col-start-4">
             <figure>
-                <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-1/2 m-auto my-5" /></a>
+                <a href="./index.html"><img src="./assets/images/logo.png" alt=""
+                        class="w-1/2 m-auto my-5 lg:my-16" /></a>
             </figure>
             <h1 class="text-3xl ">Créez votre compte SimsDL</h1>
 
         </div>
-        <form action="" class="grid grid-cols-4 col-span-4 gap-4" method="post">
+        <form action="" class="grid grid-cols-4 col-span-4 gap-4 lg:col-span-6 lg:col-start-4" method="post">
 
             <p class="flex flex-col col-span-4 text-left">
                 <label for="">Pseudo</label>
@@ -42,10 +43,10 @@
                 <input name="" id="" placeholder="Saisissez votre mot de passe" type="password" class="input-styled">
             </p>
             <button type="submit" class="col-span-4 btn-primary">
-                REINITIALISER MON MOT DE PASSE</button>
+                Créer mon compte</button>
         </form>
-        <p class="col-span-4 text-center">Vous possédez déjà un compte ? <a href="./login-page.html"
-                class="text-pinked">Connexion</a></p>
+        <p class="col-span-4 text-center lg:col-span-6 lg:col-start-4">Vous possédez déjà un compte ? <a
+                href="./login-page.html" class="text-pinked">Connexion</a></p>
     </main>
 
 </body>
