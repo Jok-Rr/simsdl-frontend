@@ -15,12 +15,12 @@
 
 <body>
 
-    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 bg-darked">
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-24 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
         <div class="flex items-center">
-            <p class="menu" id="burgermenu" aria-label="Main Menu">
+            <p class="menu lg:hidden" id="burgermenu" aria-label="Main Menu">
                 <svg width="40" height="40" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -29,6 +29,23 @@
                         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </p>
+            <ul class="items-center hidden lg:flex">
+                <li class="ml-5">Accueil</li>
+                <li class="relative ml-5" id="dropdown">
+                    Les Sims 4 <i class="fa-solid fa-angle-down"></i>
+                    <div id="dropdown-menu"
+                        class="absolute z-50 drop-shadow-2xl flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-max top-[58px] left-0 bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
+                        <a href="">Télécharger</a>
+                        <a href="">Mises à jour</a>
+                        <a href="">Contenu séparé</a>
+                        <a href="">Contenu personnalisés</a>
+
+                    </div>
+                </li>
+                <li class="ml-5">Communauté</li>
+                <li class="ml-5">Triches</li>
+                <li class="ml-5">Infos & mise à jour</li>
+            </ul>
             <figure class="w-10 ml-4 mr-3 overflow-hidden rounded-full h-fit">
                 <img id="user-icon" src="./assets/images/product-6.png" alt="">
             </figure>
@@ -158,6 +175,16 @@
                                 plus</a>
                         </div>
                     </div>
+                    <div id="card"
+                        class="relative h-auto overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg swiper-slide"
+                        style="background-image: url('./assets/images/bg-cheat.png')">
+                        <div class="flex flex-col justify-center w-full h-full p-4 backdrop-brightness-50">
+                            <h3>Comment avoir plus de SIMFLOUZ</h3>
+                            <p class="mb-2">Voicie comment troches pour avoir plus d’argent dans Les Sims 4.</p>
+                            <a href="./" class="btn-primary">Voir
+                                plus</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,6 +210,7 @@
         </div>
         <span class="col-span-4 text-xs">© Copyright 2023 SimsDL.fr tous droits réservés.</span>
     </footer>
+
     <script>
         const swiperCheat = new Swiper(".swiper-cheat", {
             // Optional parameters

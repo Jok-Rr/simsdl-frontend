@@ -14,10 +14,10 @@
 		src: url("../font/The_Sims_Sans.otf");
 	}
 	html {
-		@apply leading-none text-white bg-darklight;
+		@apply leading-none text-white bg-darklight scroll-smooth;
 	}
 	h1 {
-		@apply text-3xl font-bold;
+		@apply mb-1 text-3xl font-bold;
 	}
 	h2 {
 		@apply text-2xl font-bold;
@@ -33,6 +33,9 @@
 @layer components {
 	.btn-primary {
 		@apply inline-block p-2 text-center uppercase rounded-lg bg-pinked;
+	}
+	.btn-secondary {
+		@apply inline-block p-2 text-center uppercase border-2 rounded-lg border-pinked;
 	}
 	::-webkit-scrollbar {
 		width: 8px;

@@ -9,7 +9,17 @@ const parentModal = document.getElementById("modal-parent");
 const boxModal = document.getElementById("modal-box");
 const closeModalbtn = document.getElementById("close-modal");
 
-if (menuButton && accountButton && menuBox && accountBox) {
+const dropdownButton = document.getElementById("dropdown");
+const dropdownBox = document.getElementById("dropdown-menu");
+
+if (
+	menuButton &&
+	dropdownButton &&
+	accountButton &&
+	menuBox &&
+	accountBox &&
+	dropdownBox
+) {
 	const toggleMenu = function () {
 		if (accountBox.classList.contains("scale-y-100")) {
 			menuButton.classList.add("opened");
@@ -19,19 +29,30 @@ if (menuButton && accountButton && menuBox && accountBox) {
 		} else {
 			menuButton.classList.toggle("opened");
 			menuBox.classList.toggle("scale-y-100");
-			document.documentElement.classList.toggle("overflow-hidden");
 		}
 	};
 
 	const toggleAccount = function () {
-		if (menuBox.classList.contains("scale-y-100")) {
+		if (
+			menuBox.classList.contains("scale-y-100") ||
+			dropdownBox.classList.contains("scale-y-100")
+		) {
 			menuButton.classList.remove("opened");
 
 			menuBox.classList.remove("scale-y-100");
+			dropdownBox.classList.remove("scale-y-100");
 			accountBox.classList.toggle("scale-y-100");
 		} else {
 			accountBox.classList.toggle("scale-y-100");
-			document.documentElement.classList.toggle("overflow-hidden");
+		}
+	};
+
+	const toggleDropdown = () => {
+		if (accountBox.classList.contains("scale-y-100")) {
+			accountBox.classList.remove("scale-y-100");
+			dropdownBox.classList.toggle("scale-y-100");
+		} else {
+			dropdownBox.classList.toggle("scale-y-100");
 		}
 	};
 
@@ -44,12 +65,21 @@ if (menuButton && accountButton && menuBox && accountBox) {
 		e.stopPropagation();
 		toggleAccount();
 	});
+
+	dropdownButton.addEventListener("click", function (e) {
+		e.stopPropagation();
+		toggleDropdown();
+	});
+
 	document.documentElement.addEventListener("click", function (e) {
 		if (accountBox.classList.contains("scale-y-100")) {
 			toggleAccount();
 		}
 		if (menuBox.classList.contains("scale-y-100")) {
 			toggleMenu();
+		}
+		if (dropdownBox.classList.contains("scale-y-100")) {
+			toggleDropdown();
 		}
 	});
 }
@@ -80,5 +110,11 @@ if (btnModal && parentModal && boxModal && closeModalbtn) {
 	closeModalbtn.addEventListener("click", (e) => {
 		e.stopPropagation();
 		closeModal();
+	});
+}
+
+if (dropdown) {
+	dropdown.addEventListener("click", () => {
+		console.log("Dropped");
 	});
 }

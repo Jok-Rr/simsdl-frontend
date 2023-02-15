@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
+    <title>Inscription</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./assets/css/config.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darklight: "#1D2033",
-                        darked: "#171A29",
-                        pinked: "#FF477B",
-                    },
-                },
-            },
-        };
-    </script>
 </head>
 
-<body class="text-white">
-    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 bg-darked">
+<body>
+
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-24 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
         <div class="flex items-center">
-            <p class="menu" id="burgermenu" aria-label="Main Menu">
+            <p class="menu lg:hidden" id="burgermenu" aria-label="Main Menu">
                 <svg width="40" height="40" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -41,6 +29,23 @@
                         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </p>
+            <ul class="items-center hidden lg:flex">
+                <li class="ml-5">Accueil</li>
+                <li class="relative ml-5" id="dropdown">
+                    Les Sims 4 <i class="fa-solid fa-angle-down"></i>
+                    <div id="dropdown-menu"
+                        class="absolute z-50 drop-shadow-2xl flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-max top-[58px] left-0 bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
+                        <a href="">Télécharger</a>
+                        <a href="">Mises à jour</a>
+                        <a href="">Contenu séparé</a>
+                        <a href="">Contenu personnalisés</a>
+
+                    </div>
+                </li>
+                <li class="ml-5">Communauté</li>
+                <li class="ml-5">Triches</li>
+                <li class="ml-5">Infos & mise à jour</li>
+            </ul>
             <figure class="w-10 ml-4 mr-3 overflow-hidden rounded-full h-fit">
                 <img id="user-icon" src="./assets/images/product-6.png" alt="">
             </figure>
@@ -70,10 +75,13 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <a href="./profil-me.html"><i class="pr-2 text-xl fa-solid fa-id-card "></i> Profil</a>
-                <a href="./sub-page.html"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i> Abonnement</a>
-                <a href="./setting-page.html"><i class="pr-2 text-xl fa-solid fa-gear "></i></i> Paramètre</a>
-                <a href="#" class="inline-block px-4 py-1 mt-5 text-sm uppercase rounded-lg w-fit bg-pinked">Se
+                <a href="./profil-me.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-id-card "></i>
+                    Profil</a>
+                <a href="./sub-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i>
+                    Abonnement</a>
+                <a href="./setting-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-gear "></i></i>
+                    Paramètre</a>
+                <a href="./login-page.html" class="p-0 btn-primary ">Se
                     déconnecter</a>
             </div>
         </div>
@@ -106,7 +114,7 @@
                 <input name="" id="" placeholder="Saisissez votre mot de passe" type="password"
                     class="p-2 border-2 rounded-lg outline-none resize-none bg-darked border-grey focus:border-pinked">
             </p>
-            <button type="submit" class="p-2 py-[3px] text-center uppercase col-span-4 rounded-lg bg-pinked">
+            <button type="submit" class="col-span-4 btn-primary">
                 REINITIALISER MON MOT DE PASSE</button>
         </form>
         <p class="col-span-4 text-center">Vous possédez déjà un compte ? <a href="./login-page.html"

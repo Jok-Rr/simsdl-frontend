@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
+    <title>Profil</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
-    <title>Home Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/config.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darklight: "#1D2033",
-                        darked: "#171A29",
-                        pinked: "#FF477B",
-                    },
-                },
-            },
-        };
-    </script>
 </head>
 
-<body class="text-white ">
-    <header class="relative flex items-center justify-between col-span-4 p-4 bg-darked">
+<body>
+
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-24 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
         <div class="flex items-center">
-            <p class="menu" id="burgermenu" aria-label="Main Menu">
+            <p class="menu lg:hidden" id="burgermenu" aria-label="Main Menu">
                 <svg width="40" height="40" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -41,6 +29,23 @@
                         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </p>
+            <ul class="items-center hidden lg:flex">
+                <li class="ml-5">Accueil</li>
+                <li class="relative ml-5" id="dropdown">
+                    Les Sims 4 <i class="fa-solid fa-angle-down"></i>
+                    <div id="dropdown-menu"
+                        class="absolute z-50 drop-shadow-2xl flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-max top-[58px] left-0 bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
+                        <a href="">Télécharger</a>
+                        <a href="">Mises à jour</a>
+                        <a href="">Contenu séparé</a>
+                        <a href="">Contenu personnalisés</a>
+
+                    </div>
+                </li>
+                <li class="ml-5">Communauté</li>
+                <li class="ml-5">Triches</li>
+                <li class="ml-5">Infos & mise à jour</li>
+            </ul>
             <figure class="w-10 ml-4 mr-3 overflow-hidden rounded-full h-fit">
                 <img id="user-icon" src="./assets/images/product-6.png" alt="">
             </figure>
@@ -70,16 +75,19 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <a href="./profil-me.html"><i class="pr-2 text-xl fa-solid fa-id-card "></i> Profil</a>
-                <a href="#"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i> Abonnement</a>
-                <a href="./setting-page.html"><i class="pr-2 text-xl fa-solid fa-gear "></i></i> Paramètre</a>
-                <a href="#" class="inline-block px-4 py-1 mt-5 text-sm uppercase rounded-lg w-fit bg-pinked">Se
+                <a href="./profil-me.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-id-card "></i>
+                    Profil</a>
+                <a href="./sub-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i>
+                    Abonnement</a>
+                <a href="./setting-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-gear "></i></i>
+                    Paramètre</a>
+                <a href="./login-page.html" class="p-0 btn-primary ">Se
                     déconnecter</a>
             </div>
         </div>
     </header>
     <!-- Header -->
-    <div id="welcome" class="relative col-span-4 bg-center bg-cover mb-14 h-36"
+    <div id="welcome" class="relative col-span-4 bg-center bg-cover mb-14 h-36 pt-[88px]"
         style="background-image: url('./assets/images/1008797.png');">
 
         <div
@@ -104,9 +112,9 @@
         <!-- Btn Follow/message-->
         <div class="flex justify-end col-span-4 pt-0 overflow-hidden">
 
-            <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+            <a href="/" class="btn-primary">
                 Suivre</a>
-            <a href="/" class="px-2 py-[3px] ml-2  uppercase w-fit rounded-md bg-pinked">
+            <a href="/" class="ml-4 btn-primary">
                 Message </a>
 
         </div>
@@ -117,7 +125,7 @@
         </div>
         <!-- About user -->
         <div class="col-span-4 overflow-hidden text-center rounded-lg bg-darked">
-            <div class="p-3 bg-black">
+            <div class="p-3 bg-blacked">
                 <h3 class="uppercase">À PROPOS DE MOI</h3>
             </div>
             <p class="p-4">
@@ -126,7 +134,7 @@
         </div>
         <!-- Sing-up date -->
         <div class="col-span-2 overflow-hidden text-center rounded-lg h-fit bg-darked">
-            <div class="p-3 bg-black">
+            <div class="p-3 bg-blacked">
                 <h3 class="uppercase">MEMBRE DEPUIS</h3>
             </div>
             <p class="p-4">
@@ -135,7 +143,7 @@
         </div>
         <!-- Member roles -->
         <div class="col-span-2 overflow-hidden text-center rounded-lg bg-darked">
-            <div class="p-3 bg-black">
+            <div class="p-3 bg-blacked">
                 <h3 class="uppercase">MEMBRE DE</h3>
             </div>
             <ul class="flex flex-col p-4">
@@ -151,37 +159,37 @@
         </div>
         <!-- All posts -->
         <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
-            <div class="p-3 bg-black ">
+            <div class="p-3 bg-blacked ">
                 <h3 class="uppercase">DERNIER POSTE SUR LE FORUM</h3>
             </div>
             <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
                 <div class="flex items-center w-[70%] whitespace-nowrap overflow-hidden">
-                    <i class="p-4 mr-3 bg-black rounded-full fa-solid fa-newspaper"> </i>
+                    <i class="p-4 mr-3 rounded-full bg-blacked fa-solid fa-newspaper"> </i>
                     <p class="overflow-hidden text-normal text-ellipsis">Je test les post du forum</p>
                 </div>
-                <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                <a href="/" class="btn-primary">
                     Voir <i class="fa-solid fa-angles-right"></i></a>
             </div>
             <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
                 <div class="flex items-center w-[70%] whitespace-nowrap overflow-hidden">
-                    <i class="p-4 mr-3 bg-black rounded-full fa-solid fa-newspaper"> </i>
+                    <i class="p-4 mr-3 rounded-full bg-blacked fa-solid fa-newspaper"> </i>
                     <p class="overflow-hidden text-normal text-ellipsis">Je test les post du forum</p>
                 </div>
-                <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                <a href="/" class="btn-primary">
                     Voir <i class="fa-solid fa-angles-right"></i></a>
             </div>
             <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
                 <div class="flex items-center w-[70%] whitespace-nowrap overflow-hidden">
-                    <i class="p-4 mr-3 bg-black rounded-full fa-solid fa-newspaper"> </i>
+                    <i class="p-4 mr-3 rounded-full bg-blacked fa-solid fa-newspaper"> </i>
                     <p class="overflow-hidden text-normal text-ellipsis">Je test les post du forum</p>
                 </div>
-                <a href="/" class="px-2 py-[3px] uppercase w-fit rounded-md bg-pinked">
+                <a href="/" class="btn-primary">
                     Voir <i class="fa-solid fa-angles-right"></i></a>
             </div>
         </div>
         <!-- Empty posts -->
         <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
-            <div class="p-3 bg-black ">
+            <div class="p-3 bg-blacked ">
                 <h3 class="uppercase">DERNIER POSTE SUR LE FORUM</h3>
             </div>
             <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
@@ -190,7 +198,7 @@
         </div>
         <!-- All comments -->
         <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
-            <div class="p-3 bg-black ">
+            <div class="p-3 bg-blacked ">
                 <h3 class="uppercase">DERNIER COMMENTAIRE</h3>
             </div>
             <div class="p-4 border-b-2 border-black last:border-none">
@@ -230,7 +238,7 @@
         </div>
         <!-- Empty comments -->
         <div class="col-span-4 overflow-hidden rounded-lg bg-darked">
-            <div class="p-3 bg-black ">
+            <div class="p-3 bg-blacked ">
                 <h3 class="uppercase">DERNIER COMMENTAIRE</h3>
             </div>
             <div class="flex items-center justify-between p-4 border-b-2 border-black last:border-none">
