@@ -13,90 +13,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
-<body>
-
-    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-24 bg-darked">
-        <figure>
-            <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
-        </figure>
-        <div class="flex items-center">
-            <p class="menu lg:hidden" id="burgermenu" aria-label="Main Menu">
-                <svg width="40" height="40" viewBox="0 0 100 100">
-                    <path class="line line1"
-                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                    <path class="line line2" d="M 20,50 H 80" />
-                    <path class="line line3"
-                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-            </p>
-            <ul class="items-center hidden lg:flex">
-                <li class="ml-5"><a href="">Accueil</a></li>
-                <li class="relative ml-5 cursor-pointer" id="dropdown">
-                    Les Sims 4 <i class="fa-solid fa-angle-down"></i>
-                    <div id="dropdown-menu"
-                        class="absolute z-50 drop-shadow-2xl flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-max top-[58px] left-0 bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
-                        <a href="">Télécharger</a>
-                        <a href="">Mises à jour</a>
-                        <a href="">Contenu séparé</a>
-                        <a href="">Contenu personnalisés</a>
-
-                    </div>
-                </li>
-                <li class="ml-5"><a href="">Communauté</a></li>
-                <li class="ml-5"><a href="">Triches</a> </li>
-                <li class="ml-5"><a href="">Infos & mise à jour</a></li>
-            </ul>
-            <figure class="w-10 ml-4 mr-3 overflow-hidden rounded-full h-fit">
-                <img id="user-icon" src="./assets/images/product-6.png" alt="">
-            </figure>
-        </div>
-        <nav id="mobile-menu"
-            class="absolute z-50 drop-shadow-2xl flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-fit right-4 top-[85px] bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
-            <a href="#">Accueil</a>
-            <a href="#">Les Sims 4</a>
-            <a href="#">Télécharger</a>
-            <a href="#">Mises à jour</a>
-            <a href="#">Contenue séparé</a>
-            <a href="#">Contenue Personnalisé</a>
-            <a href="#">Communauté</a>
-            <a href="#">Triches</a>
-            <a href="#">Infos & mises à jour</a>
-
-        </nav>
-        <div id="account-menu"
-            class="absolute z-50 flex origin-top duration-300 scale-y-0 flex-col p-4 rounded-lg w-fit right-4 top-[85px] bg-[#060813cc]/[0.8] transition-transform backdrop-blur-xl leading-8">
-            <div class="flex items-center mb-4">
-                <figure class="w-12 mr-3 overflow-hidden rounded-full h-fit">
-                    <img src="./assets/images/product-6.png" alt="">
-                </figure>
-                <div class="leading-5 text-left">
-                    <p class="capitalize">JohnDoe <i class="fa-solid fa-badge-check text-pinked"></i></p>
-                    <span>@johndoe</span>
-                </div>
-            </div>
-            <div class="flex flex-col">
-                <a href="./profil-me.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-id-card "></i>
-                    Profil</a>
-                <a href="./sub-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-badge-dollar "></i>
-                    Abonnement</a>
-                <a href="./setting-page.html" class="mb-2 last:mb-0"><i class="pr-2 text-xl fa-solid fa-gear "></i></i>
-                    Paramètre</a>
-                <a href="./login-page.html" class="p-0 btn-primary ">Se
-                    déconnecter</a>
-            </div>
-        </div>
-    </header>
-
-    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px]">
+<body class="">
+    <main class="grid grid-cols-4 gap-4 p-4 lg:grid-cols-12 lg:px-44 ">
         <!-- Module Welcome -->
-        <div id="welcome" class="col-span-4 text-center">
+        <div id="welcome" class="col-span-4 text-center lg:col-span-6 lg:col-start-4">
             <figure>
                 <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-1/2 m-auto my-5" /></a>
             </figure>
             <h1 class="text-3xl">Connectez vous à votre compte SimsDL</h1>
         </div>
-        <form action="" class="grid grid-cols-4 col-span-4 gap-4" method="post">
-            <div id="alert" class="col-span-4 p-4 text-left rounded-xl bg-green-50">
+        <form action="" class="grid grid-cols-4 col-span-4 gap-4 lg:col-span-6 lg:col-start-4" method="post">
+            <!-- <div id="alert" class="col-span-4 p-4 text-left rounded-xl bg-green-50">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 text-green-800">
                         <i class="fa-solid fa-shield-check"></i>
@@ -155,7 +82,7 @@
                         </h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <p class="flex flex-col col-span-4 text-left">
                 <label for="">Pseudo ou Email</label>
                 <input type="text" name="" id="" placeholder="Saisissez votre pseudo ou e-mail" class="input-styled">
@@ -171,67 +98,11 @@
             <button type="submit" class="col-span-4 btn-primary">
                 CONNEXION</button>
         </form>
-        <a href="./password-reset-page.html" class="col-span-4 text-center text-pinked">Mot de passe oublié ?</a>
-        <a href="./register-page.html" type="submit" class="col-span-4 btn-secondary">
+        <a href="./password-reset-page.html" class="col-span-4 text-center lg:col-span-6 lg:col-start-4 text-pinked">Mot
+            de passe oublié ?</a>
+        <a href="./register-page.html" type="submit" class="col-span-4 btn-secondary lg:col-span-6 lg:col-start-4">
             CRÉER UN COMPTE</a>
-
     </main>
-    <footer class="grid grid-cols-4 py-5 text-center justify-items-center bg-darked">
-        <figure class="col-span-4 mb-4">
-            <img src="./assets/images/logo.png" alt="" class="w-32" />
-        </figure>
-        <div class="flex col-span-4 mb-4">
-            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
-                    class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
-                    class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="" class="mx-1 text-lg transition-transform hover:text-pinked hover:scale-110"><i
-                    class="fa-brands fa-discord"></i>
-            </a>
-        </div>
-        <div class="flex col-span-4 mb-3">
-            <a href="" class="px-1 border-r-2">Conditions Générales</a>
-            <a href="" class="px-1">Protection des données</a>
-        </div>
-        <span class="col-span-4 text-xs">© Copyright 2023 SimsDL.fr tous droits réservés.</span>
-    </footer>
-    <script>
-        const swiperCheat = new Swiper(".swiper-cheat", {
-            // Optional parameters
-            loop: false,
-            direction: 'horizontal',
-            // If we need pagination
-            slidesPerView: 1,
-            spaceBetween: 10,
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-cheat-btn-next",
-                prevEl: ".swiper-cheat-btn-prev",
-            },
-
-        });
-
-        const swiper = new Swiper(".swiper", {
-            // Optional parameters
-            loop: false,
-            direction: 'horizontal',
-            // If we need pagination
-            slidesPerView: 2,
-            spaceBetween: 5,
-
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-btn-next",
-                prevEl: ".swiper-btn-prev",
-            },
-
-        });
-    </script>
-    <script src="./assets/js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-
 </body>
 
 </html>

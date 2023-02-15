@@ -829,6 +829,10 @@ p {
   grid-column: span 4 / span 4;
 }
 
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .float-right {
   float: right;
 }
@@ -1044,6 +1048,10 @@ p {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/4 {
@@ -3124,6 +3132,10 @@ p {
 
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-start-4 {
+    grid-column-start: 4;
   }
 
   .lg\:m-auto {
