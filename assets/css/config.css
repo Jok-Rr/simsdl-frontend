@@ -37,6 +37,9 @@
 	.btn-secondary {
 		@apply inline-block p-2 text-center uppercase border-2 rounded-lg border-pinked;
 	}
+	.input-styled {
+		@apply p-2 border-2 border-gray-500 rounded-lg outline-none resize-none bg-darked focus:border-pinked;
+	}
 	::-webkit-scrollbar {
 		width: 8px;
 	}
