@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-24 bg-darked">
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-44 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
@@ -87,16 +87,14 @@
         </div>
     </header>
     <!-- Header -->
-    <div id="welcome" class="relative col-span-4 bg-center bg-cover mb-14 h-36"
+    <div id="welcome" class="relative bg-center bg-cover mb-14 h-36 pt-[88px] "
         style="background-image: url('./assets/images/1008797.png');">
-
         <div
-            class="flex justify-between p-4 pl-[70px] items-center absolute top-1/2 left-1/2 translate-x-[-46%] translate-y-[40%] bg-[#060813cc]/[0.8] backdrop-blur-sm w-4/5 rounded-lg">
-
+            class="flex justify-between p-4 pl-[70px] items-center absolute top-1/2 left-1/2 lg:w-[74%] lg:translate-x-[-49%] translate-x-[-46%] translate-y-[40%] bg-[#060813cc]/[0.8] backdrop-blur-sm w-4/5 rounded-lg">
             <div class="text-left">
-                <p class="text-sm uppercas">Dylanbernardoff <i class="fa-solid fa-badge-check text-pinked"></i>
+                <p class="text-base uppercas">Dylanbernardoff <i class="fa-solid fa-badge-check text-pinked"></i>
                 </p>
-                <span class="text-sm capitalize">administrateur</span>
+                <span class="text-base capitalize">administrateur</span>
                 <figure class="absolute top-0 w-20 mr-3 overflow-hidden rounded-full -left-6 h-fit">
                     <img src="./assets/images/product-6.png" alt="">
                 </figure>
@@ -108,9 +106,9 @@
         </div>
 
     </div>
-    <main class="grid grid-cols-4 gap-4 px-4 mb-4 text-center">
+    <main class="grid grid-cols-4 gap-4 px-4 mb-4 text-center lg:grid-cols-12 lg:gap-10 lg:px-44">
 
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
             <ul class="grid grid-cols-4 gap-1" id="myTab" data-tabs-toggle="#myTabContents" role="tablist">
                 <li role="presentation" class="col-span-1">
                     <button class="w-full btn-primary" id="account-tab" data-tabs-target="#account" type="button"
@@ -138,7 +136,7 @@
 
             </ul>
         </div>
-        <div id="myTabContents" class="col-span-4">
+        <div id="myTabContents" class="col-span-4 lg:col-span-12">
             <div class="hidden col-span-4 overflow-hidden text-center rounded-lg bg-darked" id="account" role="tabpanel"
                 aria-labelledby="account-tab">
                 <div class="p-3 bg-blacked">

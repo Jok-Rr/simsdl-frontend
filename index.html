@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-24 bg-darked">
+    <header class="fixed z-50 flex items-center justify-between w-screen col-span-4 p-4 lg:px-44 bg-darked">
         <figure>
             <a href="./index.html"><img src="./assets/images/logo.png" alt="" class="w-32" /></a>
         </figure>
@@ -87,11 +87,11 @@
         </div>
     </header>
 
-    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px] lg:text-left lg:grid-cols-12 lg:gap-10 lg:px-44">
+    <main class="grid grid-cols-4 gap-4 p-4 pt-[88px] text-center lg:text-left lg:grid-cols-12 lg:gap-10 lg:px-44">
         <!-- Module Welcome -->
         <div class="col-span-4 bg-center bg-no-repeat bg-cover rounded-lg lg:col-span-12 lg:p-5 lg:py-20 "
             style="background-image: url('./assets/images/01_top.jpeg')">
-            <div class="col-span-4 p-5 text-center rounded-lg lg:w-1/2 bg-darked">
+            <div class="col-span-4 p-5 rounded-lg lg:w-1/2 bg-darked">
                 <h1 class="mb-2">Jouer avec les amis</h1>
                 <p>
                     Les Sims 4 est le jeu de simulation de vie ultime : créez des
@@ -260,7 +260,7 @@
     <script>
         const swiperCheat = new Swiper(".swiper-cheat", {
             // Optional parameters
-            loop: false,
+            loop: true,
             direction: 'horizontal',
             // If we need pagination
             slidesPerView: 1,
@@ -281,7 +281,7 @@
 
         const swiper = new Swiper(".swiper", {
             // Optional parameters
-            loop: false,
+            loop: true,
             direction: 'horizontal',
             // If we need pagination
             slidesPerView: 2,

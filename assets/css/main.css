@@ -3149,6 +3149,18 @@ p {
     grid-column: span 6 / span 6;
   }
 
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:col-start-4 {
     grid-column-start: 4;
   }
@@ -3176,6 +3188,19 @@ p {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .lg\:w-\[74\%\] {
+    width: 74%;
+  }
+
+  .lg\:translate-x-\[-49\%\] {
+    --tw-translate-x: -49%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-10 {
