@@ -16,7 +16,7 @@
 	}
 
 	html {
-		@apply leading-none text-white bg-darklight scroll-smooth;
+		@apply text-white bg-darklight scroll-smooth;
 	}
 	h1 {
 		@apply mb-1 text-3xl font-bold;
