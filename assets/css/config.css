@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 @layer base {
 	@font-face {
@@ -13,6 +14,7 @@
 		font-style: normal;
 		src: url("../font/The_Sims_Sans.otf");
 	}
+
 	html {
 		@apply leading-none text-white bg-darklight scroll-smooth;
 	}
@@ -20,7 +22,7 @@
 		@apply mb-1 text-3xl font-bold;
 	}
 	h2 {
-		@apply text-2xl font-bold;
+		@apply mb-1 text-2xl font-bold;
 	}
 	h3 {
 		@apply text-xl font-bold;
@@ -32,31 +34,22 @@
 
 @layer components {
 	.btn-primary {
-		@apply inline-block p-[10px] text-center uppercase rounded-sm bg-pinked hover:scale-[102%] transition-all;
+		@apply inline-block p-[10px] text-center uppercase rounded-sm bg-pinked hover:scale-[102%] transition-all font-poppins font-semibold tracking-widest;
 	}
 	.btn-secondary {
-		@apply inline-block p-[10px] text-center uppercase border-2 rounded-sm border-pinked hover:scale-[102%] transition-all;
+		@apply inline-block p-[10px] text-center uppercase border-2 rounded-sm border-pinked hover:scale-[102%] transition-all font-poppins font-semibold tracking-widest;
 	}
 	.input-styled {
-		@apply p-2 transition-all duration-700 border-2 border-gray-500 rounded-md outline-none resize-none focus:shadow-pink-500 hover:shadow-md focus:shadow-md hover:shadow-pink-500 bg-darked focus:border-pinked hover:border-pinked;
+		@apply p-2 transition-all duration-700 border-2 border-gray-500 rounded-md outline-none resize-none focus:shadow-pink-500 hover:shadow-md focus:shadow-md hover:shadow-pink-500 bg-darked focus:border-pinked hover:border-pinked font-poppins;
 	}
-	::-webkit-scrollbar {
-		width: 8px;
+	.container-main {
+		@apply grid grid-cols-4 gap-4 m-auto w-[90%] lg:text-left items-center text-center lg:text-left mb-24 lg:grid-cols-12 lg:gap-10 lg:w-[70%];
 	}
-
-	/* Track */
-	::-webkit-scrollbar-track {
-		@apply bg-darked;
+	.navbar-wrap {
+		@apply fixed z-50 w-screen py-4 bg-darked;
 	}
-
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		@apply rounded-lg bg-pinked;
-	}
-
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		@apply bg-pinked;
+	.navbar {
+		@apply flex items-center justify-between w-[90%] lg:w-[70%] m-auto;
 	}
 }
 
@@ -122,4 +115,23 @@
 	stroke-dasharray: 90 207;
 	stroke-dashoffset: -134;
 	stroke-width: 6;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	@apply bg-darked;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	@apply rounded-lg bg-pinked;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-pinked;
 }

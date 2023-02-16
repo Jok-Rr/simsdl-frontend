@@ -14,6 +14,9 @@ module.exports = {
 				sans: ["The Sims Sans"],
 			},
 		},
+		fontFamily: {
+			poppins: ["Poppins", "sans-serif"],
+		},
 	},
 	plugins: [],
 };
