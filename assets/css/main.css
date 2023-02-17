@@ -1081,6 +1081,10 @@ p {
   height: 11rem;
 }
 
+.h-\[60\%\] {
+  height: 60%;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1092,6 +1096,19 @@ p {
 
 .h-full {
   height: 100%;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.max-h-\[60\%\] {
+  max-height: 60%;
 }
 
 .w-1\/2 {
