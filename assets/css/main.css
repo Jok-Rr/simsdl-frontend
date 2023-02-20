@@ -443,6 +443,13 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 h1 {
   margin-bottom: 0.25rem;
   font-size: 1.875rem;
@@ -678,7 +685,8 @@ p {
 }
 
 .container-main {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 6rem;
   display: grid;
   width: 90%;
@@ -719,6 +727,18 @@ p {
   .navbar {
     width: 70%;
   }
+}
+
+.footer-wrap {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 26 41 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
 }
 
 .sr-only {
@@ -1081,8 +1101,8 @@ p {
   height: 11rem;
 }
 
-.h-\[60\%\] {
-  height: 60%;
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .h-auto {
@@ -1096,15 +1116,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
 }
 
 .max-h-\[60\%\] {

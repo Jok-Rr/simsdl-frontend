@@ -18,6 +18,9 @@
 	html {
 		@apply text-white bg-darklight scroll-smooth;
 	}
+	body {
+		@apply flex flex-col justify-between min-h-screen;
+	}
 	h1 {
 		@apply mb-1 text-3xl font-bold;
 	}
@@ -43,13 +46,16 @@
 		@apply p-2 transition-all duration-700 border-2 border-gray-500 rounded-md outline-none resize-none focus:shadow-pink-500 hover:shadow-md focus:shadow-md hover:shadow-pink-500 bg-darked focus:border-pinked hover:border-pinked font-poppins;
 	}
 	.container-main {
-		@apply grid grid-cols-4 gap-4 m-auto w-[90%] lg:text-left items-center text-center lg:text-left mb-24 lg:grid-cols-12 lg:gap-10 lg:w-[70%];
+		@apply grid grid-cols-4 gap-4 mx-auto w-[90%] lg:text-left items-center text-center lg:text-left mb-24 lg:grid-cols-12 lg:gap-10 lg:w-[70%];
 	}
 	.navbar-wrap {
 		@apply fixed z-50 w-screen py-4 bg-darked;
 	}
 	.navbar {
 		@apply flex items-center justify-between w-[90%] lg:w-[70%] m-auto;
+	}
+	.footer-wrap {
+		@apply grid w-full grid-cols-4 py-5 text-center justify-items-center bg-darked;
 	}
 }
 
