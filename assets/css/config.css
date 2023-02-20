@@ -45,6 +45,9 @@
 	.input-styled {
 		@apply p-2 transition-all duration-700 border-2 border-gray-500 rounded-md outline-none resize-none focus:shadow-pink-500 hover:shadow-md focus:shadow-md hover:shadow-pink-500 bg-darked focus:border-pinked hover:border-pinked font-poppins;
 	}
+	.input-styled-upload {
+		@apply p-2 border-2 border-gray-500 rounded-md outline-none resize-none font-poppins;
+	}
 	.container-main {
 		@apply grid grid-cols-4 gap-4 mx-auto w-[90%] lg:text-left items-center text-center lg:text-left mb-24 lg:grid-cols-12 lg:gap-10 lg:w-[70%];
 	}
@@ -143,4 +146,8 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	@apply bg-pinked;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+	@apply inline-block border-0 p-[10px] mr-4 text-center uppercase rounded-sm bg-pinked hover:scale-[102%] transition-all text-white font-poppins font-semibold tracking-widest;
 }
