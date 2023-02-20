@@ -2355,16 +2355,6 @@ p {
   padding-right: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pl-\[95px\] {
   padding-left: 95px;
 }
@@ -3013,6 +3003,10 @@ p {
 
 .nav-swiper i {
   font-weight: 900;
+}
+
+.swiper-slide {
+  height: auto;
 }
 
 /* DropDown Menu */

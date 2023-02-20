@@ -80,6 +80,9 @@
 .nav-swiper i {
 	font-weight: 900;
 }
+.swiper-slide {
+	height: auto;
+}
 /* DropDown Menu */
 .line {
 	fill: none;
