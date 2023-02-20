@@ -3018,7 +3018,7 @@ p {
 }
 
 .swiper-slide {
-  height: auto;
+  height: auto !important;
 }
 
 /* DropDown Menu */

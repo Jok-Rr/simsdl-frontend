@@ -84,7 +84,7 @@
 	font-weight: 900;
 }
 .swiper-slide {
-	height: auto;
+	height: auto !important;
 }
 /* DropDown Menu */
 .line {
