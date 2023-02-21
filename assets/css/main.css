@@ -2447,6 +2447,10 @@ p {
   vertical-align: super;
 }
 
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2488,6 +2492,10 @@ p {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -3166,6 +3174,10 @@ input[type="file"]::-webkit-file-upload-button:hover {
   margin-bottom: 0px;
 }
 
+.last\:mr-0:last-child {
+  margin-right: 0px;
+}
+
 .last\:border-0:last-child {
   border-width: 0px;
 }
@@ -3286,6 +3298,14 @@ input[type="file"]::-webkit-file-upload-button:hover {
     margin-left: 1.25rem;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3312,6 +3332,10 @@ input[type="file"]::-webkit-file-upload-button:hover {
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:flex-col {
