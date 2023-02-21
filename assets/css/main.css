@@ -985,6 +985,10 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1011,6 +1015,10 @@ p {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .box-border {
@@ -3274,6 +3282,10 @@ input[type="file"]::-webkit-file-upload-button:hover {
     margin-right: 0px;
   }
 
+  .lg\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3300,6 +3312,14 @@ input[type="file"]::-webkit-file-upload-button:hover {
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:p-5 {
