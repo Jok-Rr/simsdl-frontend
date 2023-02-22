@@ -474,6 +474,11 @@ p {
   line-height: 1.5;
 }
 
+td,
+	th {
+  padding: 1rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -985,10 +990,6 @@ p {
   margin-bottom: 1.25rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1015,10 +1016,6 @@ p {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .box-border {
@@ -1164,6 +1161,18 @@ p {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .w-\[70\%\] {
@@ -1772,6 +1781,12 @@ p {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
+.divide-y-\[3px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(3px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(3px * var(--tw-divide-y-reverse));
+}
+
 .divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 1;
 }
@@ -1798,6 +1813,16 @@ p {
 
 .divide-none > :not([hidden]) ~ :not([hidden]) {
   border-style: none;
+}
+
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+}
+
+.divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-divide-opacity));
 }
 
 .place-self-auto {
@@ -2494,10 +2519,6 @@ p {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -3107,6 +3128,10 @@ p {
   background-color: rgb(255 71 123 / var(--tw-bg-opacity));
 }
 
+::-webkit-scrollbar-corner {
+  background: rgba(235, 12, 12, 0);
+}
+
 input[type="file"]::-webkit-file-upload-button {
   margin-right: 1rem;
   display: inline-block;
@@ -3286,20 +3311,20 @@ input[type="file"]::-webkit-file-upload-button:hover {
     margin-bottom: 4rem;
   }
 
-  .lg\:ml-auto {
-    margin-left: auto;
-  }
-
-  .lg\:mr-0 {
-    margin-right: 0px;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:ml-5 {
     margin-left: 1.25rem;
   }
 
-  .lg\:mb-0 {
-    margin-bottom: 0px;
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+
+  .lg\:mr-0 {
+    margin-right: 0px;
   }
 
   .lg\:mr-2 {

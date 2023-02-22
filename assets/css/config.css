@@ -33,6 +33,10 @@
 	p {
 		@apply leading-normal;
 	}
+	td,
+	th {
+		@apply p-4;
+	}
 }
 
 @layer components {
@@ -146,6 +150,10 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	@apply bg-pinked;
+}
+
+::-webkit-scrollbar-corner {
+	background: rgba(235, 12, 12, 0);
 }
 
 input[type="file"]::-webkit-file-upload-button {

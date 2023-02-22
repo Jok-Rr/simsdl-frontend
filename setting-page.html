@@ -115,6 +115,7 @@
         </div>
         <div class="col-span-4 lg:col-span-12">
             <ul class="grid grid-cols-4 gap-4" id="myTab" data-tabs-toggle="#myTabContents" role="tablist">
+
                 <li role="presentation" class="col-span-1">
                     <button class="w-full btn-primary" id="account-tab" data-tabs-target="#account" type="button"
                         role="tab" aria-controls="account" aria-selected="false"><i
@@ -148,11 +149,11 @@
                     <h3 class="uppercase">modifier mon compte</h3>
                 </div>
                 <form action="" class="grid grid-cols-4 gap-4 p-4" method="post">
-                    <p class="flex flex-col col-span-2 text-left">
+                    <p class="flex flex-col col-span-4 text-left">
                         <label for="">Photo de profil</label>
                         <input type="file" name="" id="" class="input-styled-upload">
                     </p>
-                    <p class="flex flex-col col-span-2 text-left">
+                    <p class="flex flex-col col-span-4 text-left">
                         <label for="">Photo de la bannière</label>
                         <input type="file" name="" id="" class="input-styled-upload">
                     </p>
@@ -214,11 +215,31 @@
                 <div class="hidden col-span-4 overflow-hidden text-center rounded-lg bg-darked" id="history"
                     role="tabpanel" aria-labelledby="history-tab">
                     <div class="p-3 bg-blacked">
-                        <h3 class="uppercase">Historique de connexion</h3>
+                        <h3 class="uppercase">Historique de paiement</h3>
                     </div>
-                    <p class="p-4">
-                        Historique de connexion
-                    </p>
+                    <div class="w-full overflow-x-scroll whitespace-nowrap">
+                        <table class=" text-left divide-y-[3px] divide-gray-300 ">
+                            <thead>
+                                <tr>
+                                    <th class="w-[35%]">Numéro de transaction</th>
+                                    <th class="w-[45%]">Informations</th>
+                                    <th class="w-[20%]">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td>TRANSACTION_825553</td>
+                                    <td>Achat Boost</td>
+                                    <td>07/06/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>TRANSACTION_825553</td>
+                                    <td>Achat Boost</td>
+                                    <td>07/06/2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
