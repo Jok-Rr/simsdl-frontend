@@ -64,6 +64,15 @@
 	.footer-wrap {
 		@apply grid w-full grid-cols-4 py-5 text-center justify-items-center bg-darked;
 	}
+	.pagination {
+		@apply flex items-center m-auto w-fit;
+	}
+	.current-page {
+		@apply px-[25px] py-[20px] !important;
+	}
+	.item-pagination {
+		@apply px-[15px] py-[10px] ml-[5px] bg-darked text-xl rounded-[10px] shadow-md;
+	}
 }
 
 /* Swiper nav */
